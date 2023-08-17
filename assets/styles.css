@@ -8,12 +8,11 @@
 
 body {
     min-height: 100vh;
-    margin: auto;
     background-color: #e7d0b9;
     font-family: 'Josefin Sans', sans-serif;
     color: #602f27;
     display: flex;
-    flex: 1 0 auto;
+    flex-direction: column;
 }
 
 header {
@@ -31,6 +30,10 @@ header {
 
 h3 {
     color: #f19356;
+}
+
+p {
+    font-size: 1.25rem;
 }
 
 a {
@@ -81,25 +84,55 @@ main {
 }
 
 #image-top {
-    height: 600px;
+    height: 540px;
     width: 100%;
-    background: url("images/free-wide.webp") no-repeat center center/cover;
     position: relative;
+    background: url("images/free-wide.webp") no-repeat center center/cover;
     border-bottom: 2px solid #602f27;
 }
 
 #image-text {
- background-color: rgba(0, 0, 0, .2);
-            font-size: 140%;
-            position: absolute;
-            top: 200px;
-            right: 200px;
-            width: fit-content;
-            min-height: fit-content;
-            padding: 15px;
-            letter-spacing: 0.5px;
-            color: #f19356;
-        }
+    background-color: rgba(0, 0, 0, .2);
+    font-size: 140%;
+    position: absolute;
+    top: 180px;
+    right:120px;
+    width: fit-content;
+    min-height: fit-content;
+    padding: 15px;
+    letter-spacing: 0.5px;
+    color: #f19356;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+}
+
+.heading-layout {
+    width: 20%;
+    text-align: right;
+    margin-left: 200px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.text-layout {
+    width: 100%;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+
+span {
+    font-weight: bold;
+}
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (max-width: 576px) {

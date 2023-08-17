@@ -1,93 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@300;400;700&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
     margin: auto;
-    background-color: beige;
+    background-color: #e7d0b9;
     font-family: 'Josefin Sans', sans-serif;
-    color: #704214;
+    color: #602f27;
     display: flex;
     flex: 1 0 auto;
 }
 
 header {
     width: 100%;
-    background-color: darkkhaki;
+    background-color: #fff8de;
     display: flex;
-    align-items: baseline;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    align-items: center;
+    padding: 2rem 5rem;
     position: fixed;
     z-index: 99;
 }
 
+h3 {
+    color: #f19356;
+}
+
 a {
     text-decoration: none;
-    color: #704214;
+    color: #602f27;
 }
 
 a:hover {
-    color: white;
+    color: #9ba5b1;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 nav {
-    position: relative;
-    right: 2rem;
-}
-
-#nav-toggle:checked~nav {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    font-size: 2rem;
+    position: fixed;
+    right: -20px;
 }
 
 li {
     list-style-type: none;
     padding-top: 8px;
     display: inline-block;
-    margin: 20px;
+    margin: 0 10px;
+    font-size: 1.25rem;
 
 }
 
 #logo {
-    font-size: 250%;
-    color: #704214;
-    padding: 1.5rem;
+    color: #602f27;
 }
 
-#menu {
-    padding: 0 1rem;
-    color: #704214;
+#menu {}
+
+
+#burger {
+    position: absolute;
+    right: 50px;
+    vertical-align: auto;
 }
 
 main {
+    flex: 1 0 auto;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+#image-top {
+    height: 600px;
     width: 100%;
+    background: url("images/free-wide.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+#image-text {
+ background-color: rgba(0, 0, 0, .2);
+            font-size: 140%;
+            position: absolute;
+            top: 150px;
+            right: 50px;
+            width: fit-content;
+            min-height: fit-content;
+            padding: 15px;
+        }
 }
 
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (max-width: 576px) {
 
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-
-    nav {
-        display: block;
-        width: fit-content;
-        border: 2px solid black;
-        position: relative;
+    header {
+        height: 80px;
+        display: flex;
     }
 
-    #menu {
-        border: 2px solid black;
+    #logo {
+        font-size: 125%;
+    }
+
+
+    nav {
+        position: relative;
+        display: flex;
     }
 
     li {
-        border: 2px solid black;
+        font-size: 1rem;
     }
 
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    #logo {
+        font-size: 200%;
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+    }
+
+    li {
+        font-size: 1.25rem;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #logo {
+        font-size: 300%;
+    }
+
+    li {
+        font-size: 1.5rem;
+    }
 }

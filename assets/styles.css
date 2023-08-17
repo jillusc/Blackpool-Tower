@@ -96,7 +96,7 @@ main {
     font-size: 140%;
     position: absolute;
     top: 180px;
-    right:120px;
+    right: 120px;
     width: fit-content;
     min-height: fit-content;
     padding: 15px;
@@ -116,7 +116,7 @@ div {
 
 .heading-layout {
     width: 20%;
-    text-align: right;
+    text-align: left;
     margin-left: 200px;
     padding-top: 40px;
     padding-bottom: 30px;
@@ -132,6 +132,22 @@ div {
 
 span {
     font-weight: bold;
+}
+
+.history-section {
+    background-color: #f1935644;
+    border-top: 2px solid #fff8de;
+    border-bottom: 2px solid #fff8de;
+}
+
+iframe {
+    margin: auto;
+    border: 2px double #fff8de;
+}
+
+#map {
+    padding: 40px;
+    background-color: #e7d0b9;
 }
 
 /* Media query: large or landscape phones (576px and up) */

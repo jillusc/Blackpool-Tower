@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@300;400;700&display=swap');
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -11,29 +11,15 @@ body {
     background-color: #e7d0b9;
     font-family: 'Josefin Sans', sans-serif;
     color: #602f27;
-    display: flex;
-    flex-direction: column;
+    font-size: 16px;
 }
 
 header {
     width: 100%;
     background-color: #fff8de;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5rem;
     position: fixed;
     z-index: 99;
     border-bottom: 3px solid #f19356;
-}
-
-h3 {
-    color: #f19356;
-}
-
-p {
-    font-size: 1.25rem;
 }
 
 a {
@@ -49,39 +35,7 @@ a:hover {
     text-decoration: underline;
 }
 
-nav {
-    position: fixed;
-    right: -20px;
-}
-
-li {
-    list-style-type: none;
-    padding-top: 8px;
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 1.25rem;
-
-}
-
-#logo {
-    color: #602f27;
-}
-
-#menu {}
-
-
-#burger {
-    position: absolute;
-    right: 50px;
-    vertical-align: auto;
-}
-
-main {
-    flex: 1 0 auto;
-    margin-top: 75px;
-    display: flex;
-    flex-direction: column;
-}
+nav {}
 
 #image-top {
     height: 540px;
@@ -104,30 +58,16 @@ main {
     color: #f19356;
 }
 
-section {
-    width: 100%;
+#logo {
+    color: #602f27;
+    margin: 0;
+}
+
+#history-section {
+    padding: 0 5% 0;
     display: flex;
-    flex-direction: column;
-}
-
-div {
-    display: flex;
-}
-
-.heading-layout {
-    width: 20%;
-    text-align: left;
-    margin-left: 200px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
-.text-layout {
-    width: 100%;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 30px;
-    line-height: 150%;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 span {
@@ -140,18 +80,19 @@ span {
     border-bottom: 2px solid #fff8de;
 }
 
-iframe {
-    margin: auto;
-    border: 2px double #fff8de;
+.heading-layout {
+    margin-left: 5%;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
-#map {
-    padding: 40px;
-    background-color: #e7d0b9;
+.text-layout {
+    margin: 0 5% 5%;
+    line-height: 150%;
 }
 
 footer {
-width: 100%;
+    width: 100%;
     background-color: #fff8de;
     display: flex;
     flex-direction: row;
@@ -159,57 +100,4 @@ width: 100%;
     align-items: center;
     padding: 2rem 5rem;
     border-top: 3px solid #f19356;
-}
-
-/* Media query: large or landscape phones (576px and up) */
-@media screen and (max-width: 576px) {
-
-    header {
-        height: 80px;
-        display: flex;
-    }
-
-    #logo {
-        font-size: 125%;
-    }
-
-
-    nav {
-        position: relative;
-        display: flex;
-    }
-
-    li {
-        font-size: 1rem;
-    }
-
-}
-
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-    #logo {
-        font-size: 200%;
-    }
-
-    nav {
-        position: relative;
-        display: flex;
-        flex-wrap: nowrap;
-        width: auto;
-    }
-
-    li {
-        font-size: 1.25rem;
-    }
-}
-
-/* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    #logo {
-        font-size: 300%;
-    }
-
-    li {
-        font-size: 1.5rem;
-    }
 }

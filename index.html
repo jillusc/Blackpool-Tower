@@ -21,7 +21,7 @@
             <h1 id="logo">Blackpool Tower</h1>
         </a>
         <nav>
-            <ul id="menu">
+            <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="">Link#1</a></li>
                 <li><a href="">Link#2</a></li>
@@ -32,15 +32,14 @@
     </header>
     <main>
         <section id="image-top">
-            <div id="image-text">
+            <div id="image-text" class="">
                 <p>
                     An introduction to what's worth knowing about the iconic northern
                     landmark
                 </p>
             </div>
         </section>
-
-        <section>
+        <section id="intro-text">
             <div class="heading-layout">
                 <h2>The Blackpool Tower</h2>
             </div>
@@ -76,10 +75,11 @@
             </div>
         </section>
 
-        <section class="history-section">
-            <div class="heading-layout">
+        <section id="history-section">
+            <div class="">
                 <h2>History of the tower</h2>
             </div>
+            <div>
             <p class="text-layout">
                 The Blackpool Tower was commissioned in 1890 by Sir John Bickerstaffe who was
                 the town's mayor at that time. He had returned from the World Trade
@@ -87,23 +87,71 @@
                 the newly unveiled <i>Tour Eiffel</i>, decided his beloved hometown
                 should have one of its very own. <br />
                 Lancashire architects James Maxwell and and Charles Tuke designed the structure but both men had passed
-                away before
-                its completion in 1894. The construction took four years, using five
+                away before its completion in 1894. The construction took four years, using five
                 million bricks and more than 2,000 tons of steel and cast iron. <br />
                 The first visitors paid sixpence to ride the lifts to the top. <br />
                 A Grade I listed building, the Blackpool Tower stands at 152m tall.</p>
             </div>
+            <div><img src="assets/images/free-tower.jpg" alt="Blackpool Tower" width="400px" /></div>
         </section>
         <section id="form-section">
-            <div>
-                <p class="header-layout">insert form here</p>
+            <div class="flex-row">
+                <p class="header-layout">Sign up</p>
+                <p class="text-layout">To receive news about the events happening at Blackpool Tower</p>
+                <div id="form">
+                    <form id="survey-form" action="mailto:email@gmail.org">
+                        <fieldset>
+                            <label for="name" id="name-label">Name<input id="name" name="name" type="text" placeholder="(required)"
+                                    required /></label>
+                            <label for="email" id="email-label">Email<input id="email" name="email" type="email" placeholder="Sign up!"
+                                    required /></label>
+    <label for="age-select">Age<input id="age-select" list="age" name="age-select" required>
+    <datalist id="age">
+        <option value="15 or younger">
+        <option value="16-24 yrs">
+        <option value="25-34 yrs">
+        <option value="35-44 yrs">
+        <option value="45-54 yrs">
+        <option value="55-64 yrs">
+        <option value="65 or older">
+    </datalist>
+        </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                <h4>About me:</h4>
+                                <p>(please select all that apply)</p>
+                            </legend>
+                            <label for="about-me"><input id="about-me" type="checkbox" name="resident"
+                                    value="resident">
+                                I'm a resident of Blackpool</label>
+                            <label for="about-me"><input id="about-me" type="checkbox"
+                                    name="frequent-visitor" value="frequent-visitor">
+                                I'm a frequent visitor of Blackpool Tower</label>
+                            <label for="about-me"><input id="about-me" type="checkbox"
+                                    name="occasional-visitor" value="occasional-visitor">
+                                I occasionally visit Blackpool Tower</label>
+                            <label for="about-me"><input id="about-me" type="checkbox"
+                                    name="yet-to-visit" value="yet-to-visit">
+                                I have yet to visit the Tower</label>
+                            <label for="about-me"><input id="about-me" type="checkbox" name="resident" value="resident">
+                                I live outside of the UK</label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="message">Add a message:
+                                <textarea id="comments" name="comments" rows="3" cols="30"
+                                    placeholder="Comments"></textarea>
+                            </label>
+                        </fieldset>
+                        <button type="submit" id="submit">SUBMIT</button>
+                        </survey-form>
+                </div>
             </div>
         </section>
         <section id="map-section">
             <div id="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1177.7583429068!2d-3.056582243098989!3d53.81588339307864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b44703c3e018d%3A0x759f7bded7de6841!2sBlackpool%20Tower%2C%20Blackpool%2C%20UK!5e0!3m2!1sen!2sde!4v1692275559308!5m2!1sen!2sde"
-                    width="60%" height="350" title="Embedded Google Map showing Blackpool Tower's location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1177.7583429068!2d-3.056582243098989!3d53.81588339307864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b44703c3e018d%3A0x759f7bded7de6841!2sBlackpool%20Tower%2C%20Blackpool%2C%20UK!5e0!3m2!1sen!2sde!4v1692275559308!5m2!1sen!2sde" title="Embedded Google Map showing Blackpool Tower's location"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>

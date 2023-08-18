@@ -37,6 +37,18 @@ a:hover {
 
 nav {}
 
+span {
+    font-weight: bold;
+}
+
+.map {
+    width: 268px;
+    display: block;
+    margin: 0 auto 0;
+    border: 2px double #fff8de;
+
+}
+
 #image-top {
     height: 540px;
     width: 100%;
@@ -65,13 +77,12 @@ nav {}
 
 #history-section {
     padding: 0 5% 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
 
-span {
-    font-weight: bold;
+#history-section img {
+    width: 252px;
+    display: block;
+    margin: 0 auto 0;
 }
 
 .history-section {
@@ -82,8 +93,8 @@ span {
 
 .heading-layout {
     margin-left: 5%;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 8%;
+    padding-bottom: 5%;
 }
 
 .text-layout {
@@ -101,3 +112,10 @@ footer {
     padding: 2rem 5rem;
     border-top: 3px solid #f19356;
 }
+
+/*for larger screens use flexbox for history section
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        
+   enlarge image and map*/

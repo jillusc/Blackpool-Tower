@@ -5,14 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="blackpool, tower, seaside, lancashire, circus, ballroom, dungeon, England" />
+    <meta name="keywords" content="blackpool, tower, seaside, lancashire, circus, ballroom, dungeon, England" />
     <meta name="description" content="A guide to the iconic landmark of northern
     England that is Blackpool Tower" />
     <meta name="author" content="jillus" />
-
     <link rel="stylesheet" href="assets/styles.css" />
-
-    <title>The Blackpool Tower</title>
+    <link rel="icon" type="image/png" href="assets/images/blackpool-tower-favicon.png">
 </head>
 
 <body>
@@ -32,7 +30,7 @@
     </header>
     <main>
         <section id="image-top">
-            <div id="image-text" class="">
+            <div id="image-text">
                 <p>
                     An introduction to what's worth knowing about the iconic northern
                     landmark
@@ -41,13 +39,13 @@
         </section>
         <section id="intro-text">
             <div class="heading-layout">
-                <h2>The Blackpool Tower</h2>
+                <i class="fa-solid fa-landmark"></i><h2>The Blackpool Tower</h2>
             </div>
             <div>
                 <p class="text-layout">
                     Standing tall on the central promenade since 1894, the design of
                     this no. 1 attraction was undeniably inspired by the Eiffel Tower in
-                    Paris. Today, Blackpool Tower welcomes thousands of visitors each
+                    Paris. <br>Today, Blackpool Tower welcomes thousands of visitors each
                     year to the archetypal northern English seaside town, promising fun
                     for all the family.
                 </p>
@@ -75,95 +73,127 @@
             </div>
         </section>
 
-        <section id="history-section" class="history-section">
+        <section id="history-section" class="orangey-bg">
             <div class="heading-layout">
-                <h2>History of the tower</h2>
+                <i class="fa-solid fa-timeline"></i><h2>History</h2>
             </div>
             <div>
-            <p class="text-layout">
-                The Blackpool Tower was commissioned in 1890 by Sir John Bickerstaffe who was
-                the town's mayor at that time. He had returned from the World Trade
-                Fair in Paris a year earlier and was so impressed by the sight of
-                the newly unveiled <i>Tour Eiffel</i>, decided his beloved hometown
-                should have one of its very own. <br />
-                Lancashire architects James Maxwell and and Charles Tuke designed the structure but both men had passed
-                away before its completion in 1894. The construction took four years, using five
-                million bricks and more than 2,000 tons of steel and cast iron. <br />
-                The first visitors paid sixpence to ride the lifts to the top. <br />
-                A Grade I listed building, the Blackpool Tower stands at 152m tall.</p>
+                <p class="text-layout">
+                    The Blackpool Tower was commissioned in 1890 by Sir John Bickerstaffe who was
+                    the town's mayor at that time. He had returned from the World Trade
+                    Fair in Paris a year earlier and was so impressed by the sight of
+                    the newly unveiled <i>Tour Eiffel</i>, decided his beloved hometown
+                    should have one of its very own. <br />
+                    Lancashire architects James Maxwell and and Charles Tuke designed the structure but both men had
+                    passed
+                    away before its completion in 1894. The construction took four years, using five
+                    million bricks and more than 2,000 tons of steel and cast iron.
+                </p>
             </div>
-            <div><img src="assets/images/free-tower.jpg" alt="Blackpool Tower and the promenade seen from the sea" /></div>
+            <div><img src="assets/images/free-tower.jpg" alt="Blackpool Tower and the promenade seen from the sea" />
+            </div>
+            <div>
+                <p class="text-layout">
+                    The first visitors paid sixpence to ride the lifts to the top. <br />
+                    A Grade I listed building, the Blackpool Tower stands at 152m tall.
+                </p>
+            </div>
+
         </section>
         <section id="form-section">
-            <div class="flex-row">
-                <p class="header-layout">Sign up</p>
-                <p class="text-layout">To receive news about the events happening at Blackpool Tower</p>
-                <div id="form">
-                    <form id="survey-form" action="mailto:email@gmail.org">
-                        <fieldset>
-                            <label for="name" id="name-label">Name<input id="name" name="name" type="text" placeholder="(required)"
-                                    required /></label>
-                            <label for="email" id="email-label">Email<input id="email" name="email" type="email" placeholder="Sign up!"
-                                    required /></label>
-    <label for="age-select">Age<input id="age-select" list="age" name="age-select" required>
-    <datalist id="age">
-        <option value="15 or younger">
-        <option value="16-24 yrs">
-        <option value="25-34 yrs">
-        <option value="35-44 yrs">
-        <option value="45-54 yrs">
-        <option value="55-64 yrs">
-        <option value="65 or older">
-    </datalist>
-        </select>
-                        </fieldset>
-                        <fieldset>
-                            <legend>
-                                <h4>About me:</h4>
-                                <p>(please select all that apply)</p>
-                            </legend>
-                            <label for="about-me"><input id="about-me" type="checkbox" name="resident"
-                                    value="resident">
-                                I'm a resident of Blackpool</label>
-                            <label for="about-me"><input id="about-me" type="checkbox"
-                                    name="frequent-visitor" value="frequent-visitor">
-                                I'm a frequent visitor of Blackpool Tower</label>
-                            <label for="about-me"><input id="about-me" type="checkbox"
-                                    name="occasional-visitor" value="occasional-visitor">
-                                I occasionally visit Blackpool Tower</label>
-                            <label for="about-me"><input id="about-me" type="checkbox"
-                                    name="yet-to-visit" value="yet-to-visit">
-                                I have yet to visit the Tower</label>
-                            <label for="about-me"><input id="about-me" type="checkbox" name="resident" value="resident">
-                                I live outside of the UK</label>
-                        </fieldset>
-                        <fieldset>
-                            <label for="message">Add a message:
-                                <textarea id="comments" name="comments" rows="3" cols="30"
-                                    placeholder="Comments"></textarea>
-                            </label>
-                        </fieldset>
-                        <button type="submit" id="submit">SUBMIT</button>
-                        </survey-form>
-                </div>
+            <div class="heading-layout">
+                <i class="fa-solid fa-newspaper"></i><h2>Sign up</h2>
+            </div>
+            <div>
+                <p class="text-layout">
+                    To receive information about all of the news and exciting events happening at
+                    Blackpool Tower.
+                </p>
+            </div>
+            <div id="form">
+                <form id="sign-up-form" action="mailto:email@gmail.org">
+                    <fieldset>
+                        <label for="name" id="name-label" style="padding-top: 5%">Name<input id="name" name="name" type="text"
+                                placeholder="(required)" required /></label>
+                        <label for="email" id="email-label">Email<input id="email" name="email" type="email"
+                                placeholder="Sign up!" required /></label>
+                        <label for="age-select" placeholder="">Age<input id="age-select" list="age" name="age-select" required>
+                            <datalist id="age">
+                                <option value="15 or younger">
+                                <option value="16-24 yrs">
+                                <option value="25-34 yrs">
+                                <option value="35-44 yrs">
+                                <option value="45-54 yrs">
+                                <option value="55-64 yrs">
+                                <option value="65 or older">
+                            </datalist>
+                            </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <h4 class="heading-layout">About me:</h4>
+                            <p class="text-layout">(please select all that apply)</p>
+                        </legend>
+                        <div class="flex-labels-checkboxes">
+                        <label for="about-me" style="margin-top: -20px"><input id="about-me" type="checkbox" name="resident" value="resident">
+                            I'm a resident of Blackpool</label>
+                        <label for="about-me"><input id="about-me" type="checkbox" name="frequent-visitor"
+                                value="frequent-visitor">
+                            I'm a frequent visitor of Blackpool Tower</label>
+                        <label for="about-me"><input id="about-me" type="checkbox" name="occasional-visitor"
+                                value="occasional-visitor">
+                            I occasionally visit Blackpool Tower</label>
+                        <label for="about-me"><input id="about-me" type="checkbox" name="yet-to-visit"
+                                value="yet-to-visit">
+                            I have yet to visit the Tower</label>
+                        <label for="about-me"><input id="about-me" type="checkbox" name="resident" value="resident">
+                            I live outside of the UK</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="message">
+                            <p class="text-layout">Add a message:</p>
+                            <textarea id="comments" name="comments" rows="4" cols="30"
+                                placeholder="Comments"></textarea>
+                        </label>
+                    <button type="submit" id="submit">Send</button>
+                    </form>
+                </fieldset>
             </div>
         </section>
-        <section id="map-section">
-            <div id="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1177.7583429068!2d-3.056582243098989!3d53.81588339307864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b44703c3e018d%3A0x759f7bded7de6841!2sBlackpool%20Tower%2C%20Blackpool%2C%20UK!5e0!3m2!1sen!2sde!4v1692275559308!5m2!1sen!2sde" title="Embedded Google Map showing Blackpool Tower's location"
-                    referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        <section id="map-section" class="orangey-bg">
+            <div class="heading-layout">
+                <i class="fa-solid fa-map-pin"></i><h2>Visit</h2>
+            <p class="text-layout">The Blackpool Tower<br> The Promenade <br> FY1 4BJ<br></p></div>
+                        <div id="map-div">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1177.7583429068!2d-3.056582243098989!3d53.81588339307864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b44703c3e018d%3A0x759f7bded7de6841!2sBlackpool%20Tower%2C%20Blackpool%2C%20UK!5e0!3m2!1sen!2sde!4v1692275559308!5m2!1sen!2sde"
+                                title="Embedded Google Map showing Blackpool Tower's location" referrerpolicy="no-referrer-when-downgrade"
+                                class="map" width="50%" height="50%"></iframe>
+                        </div>
+            <p class="text-layout"><span>By Car</span><br>
+            Take the M6 to junction 32 and then the M55 to junction 4. <br>Follow the brown signs for Town Centre Attractions and
+            Central Car-parks. <br>Disabled access into The Blackpool Tower is via Bank Hey Street (opposite Primark).<br><br>
+    <span>By Train</span><br>
+            There are two train stations in Blackpool: Blackpool North Station is closest (around 5 minutes walk to The Blackpool
+            Tower).
             </div>
+
+
         </section>
     </main>
     <footer>
         <div>
             <ul>
-                <li><a href="https://www.facebook.com/TheBlackpoolTower" target="_blank" rel="noopener" aria-label="Visit the official Blackpool Tower Facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook" style="color: #602f27;"></i></a></li>
+                <li><a href="https://www.facebook.com/TheBlackpoolTower" target="_blank" rel="noopener"
+                        aria-label="Visit the official Blackpool Tower Facebook page (opens in new tab)"><i
+                            class="fa-brands fa-square-facebook" style="color: #602f27;"></i></a></li>
                 <li><a href="https://www.instagram.com/theblackpooltower/" target="_blank" rel="noopener"
-                    aria-label="Visit the official Blackpool Tower Instagram account (opens in new tab)"><i class="fa-brands fa-instagram" style="color: #602f27;"></i></a></li>
+                        aria-label="Visit the official Blackpool Tower Instagram account (opens in new tab)"><i
+                            class="fa-brands fa-instagram" style="color: #602f27;"></i></a></li>
                 <li><a href="https://www.twitter.com/thebpltower" target="_blank" rel="noopener"
-                    aria-label="Visit the official Blackpool Tower Twitter page (opens in new tab)"><i class="fa-brands fa-square-twitter" style="color: #602f27;"></i></a></li>
+                        aria-label="Visit the official Blackpool Tower Twitter page (opens in new tab)"><i
+                            class="fa-brands fa-square-twitter" style="color: #602f27;"></i></a></li>
             </ul>
         </div>
     </footer>

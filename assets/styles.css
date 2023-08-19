@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@300;400;700&display=swap");
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 body {
     min-height: 100vh;
     background-color: #e7d0b9;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     color: #602f27;
     font-size: 16px;
 }
@@ -41,14 +41,6 @@ span {
     font-weight: bold;
 }
 
-.map {
-    width: 268px;
-    display: block;
-    margin: 0 auto 0;
-    border: 2px double #fff8de;
-
-}
-
 #image-top {
     height: 540px;
     width: 100%;
@@ -58,7 +50,7 @@ span {
 }
 
 #image-text {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, 0.2);
     font-size: 140%;
     position: absolute;
     top: 180px;
@@ -75,20 +67,90 @@ span {
     margin: 0;
 }
 
-#history-section {
-    padding: 0 5% 0;
-}
-
 #history-section img {
     width: 252px;
     display: block;
     margin: 0 auto 0;
+    padding-bottom: 14px;
 }
 
-.history-section {
+#form {
+    margin: -8% 0 0;
+}
+
+#sign-up-form {
+    width: 252px;
+    display: block;
+    margin: 0 auto 0;
+    padding-bottom: 14px;
+}
+
+fieldset {
+    border: none;
+    padding: 2em 0 2em;
+    border-bottom: 2px solid #9ba5b1;
+}
+
+input,
+textarea {
+    margin: 0 0 5%;
+    width: 100%;
+    min-height: 2em;
+    font-family: "Josefin Sans";
+    font-size: 0.75em;
+    border: 1px solid black;
+    padding: 2%;
+}
+
+label {
+    padding: 0 0 12%;
+}
+
+select {
+    margin: 10px 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: white;
+    font-size: 16px;
+}
+
+legend {
+    width: 100%;
+    padding-top: 8%;
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #602f27;
+    background-color: #e7d0b9;
+    border-color: 1px solid #602f27;
+    min-width: 150px;
+}
+
+.orangey-bg {
     background-color: #f1935644;
     border-top: 2px solid #fff8de;
     border-bottom: 2px solid #fff8de;
+}
+
+.orangey-bg:last-of-type {
+    background-color: #f1935644;
+    border-top: 2px solid #fff8de;
+}
+
+.map-section {
+    background-color: #f1935644;
+}
+
+#map-div {
+    display: block;
+    padding: 5%;
+    text-align: right;
+}
+.map {
+    border: 2px solid #fff8de;
 }
 
 .heading-layout {
@@ -100,6 +162,15 @@ span {
 .text-layout {
     margin: 0 5% 5%;
     line-height: 150%;
+}
+
+.flex-labels-checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
 }
 
 footer {
@@ -118,4 +189,4 @@ footer {
         justify-content: flex-start;
         align-items: center; 
         
-   enlarge image and map*/
+   enlarge image, form, map*/

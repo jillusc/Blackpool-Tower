@@ -1,261 +1,231 @@
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@300;400;700&display=swap");
 
+/** general styles **/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #e7d0b9;
-  font-family: "Josefin Sans", sans-serif;
-  color: #602f27;
-  font-size: 16px;
+    /*  min-height: 100vh; */
+    background-color: #e7d0b9;
+    font-family: "Josefin Sans", sans-serif;
+    color: #602f27;
+    font-size: 16px;
 }
 
 header {
-  width: 100%;
-  padding: 10% 10% 5% 10%;
-  background-color: #fff8de;
-  position: fixed;
-  z-index: 99;
-  border-bottom: 3px solid #f19356;
-}
-#logo {
-  color: #602f27;
-  text-align: center;
-  padding-bottom: 8%;
+    width: 100%;
+    padding: 10% 10% 5% 10%;
+    background-color: #fff8de;
+    position: fixed;
+    z-index: 99;
+    border-bottom: 3px solid #f19356;
 }
 
-nav {
-  display: block;
+#logo {
+    color: #602f27;
+    text-align: center;
+    padding-bottom: 8%;
 }
 
 section {
-  padding: 0 5% 5% 5%;
+    padding: 0 5% 5% 5%;
 }
 
-main {
-  padding-top: 0px;
+main {}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+li {
+    list-style-type: none;
+}
+hr {
+    border-top: 1px solid #9ba5b1;
 }
 
+/** links **/
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
-  color: #9ba5b1;
+    color: #9ba5b1;
 }
 
 .active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
+/** text **/
 h2 {
-  font-size: 20px;
+    font-size: 20px;
 }
-
 span {
-  font-weight: bold;
+    font-weight: bold;
 }
 
+/** media **/
 #image-top {
-  height: 540px;
-  width: 100%;
-  position: relative;
-  background: url("images/free-wide.webp") no-repeat center center/cover;
-  background-position: 30% 100%;
-  border-bottom: 2px solid #602f27;
+    height: 540px;
+    width: 100%;
+    position: relative;
+    background: url("images/free-wide.webp") no-repeat center center/cover;
+    background-position: 30% 100%;
+    border-bottom: 2px solid #602f27;
 }
 
 #image-text {
-  background-color: rgba(0, 0, 0, 0.2);
-  font-size: 110%;
-  position: absolute;
-  top: 29%;
-  right: 5%;
-  width: 40%;
-  text-align: right;
-  padding: 5px;
-  letter-spacing: 0.5px;
-  color: #f19356;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 110%;
+    position: absolute;
+    top: 29%;
+    right: 5%;
+    width: 40%;
+    text-align: right;
+    padding: 5px;
+    letter-spacing: 0.5px;
+    color: #f19356;
 }
 
 #history-section img {
-  width: 100%;
-  margin: 0 auto 0;
-  padding: 14px 0;
+    width: 100%;
+    margin: 0 auto 0;
+    padding: 14px 0;
 }
 
-#form {
-  margin: -8% 0 0;
-}
+/* form */
+#form-section{}
 
 #sign-up-form {
-  width: 100%;
+    width: 100%;
 }
-
 fieldset {
-  border: none;
-  padding: 2em 0 2em;
-  border-bottom: 2px solid #9ba5b1;
+    border: none;
+    padding: 2em 0 2em;
+    border-bottom: 2px solid #9ba5b1;
 }
-
 fieldset:last-of-type {
-  border: none;
-  padding: 2em 0 2em;
+    border: none;
+    padding: 2em 0 2em;
 }
-
 input,
 textarea {
-  margin: 0 0 5%;
-  width: 100%;
-  min-height: 2em;
-  font-family: "Josefin Sans";
-  font-size: 0.75em;
-  border: 1px solid black;
-  padding: 2%;
+    margin: 0 0 5%;
+    width: 100%;
+    min-height: 2em;
+    font-family: "Josefin Sans";
+    font-size: 0.75em;
+    border: 1px solid black;
+    padding: 2%;
 }
-
 label {
-  padding: 0 0 12%;
+    padding: 0 0 12%;
 }
-
 #sign-up-form label.full-width input {
-  width: 100%;
-  max-width: 75%;
-  margin-left: auto;
+    width: 100%;
+    max-width: 75%;
+    margin-left: auto;
 }
-
 label[for="message"] {
-  flex-direction: column;
-  padding-bottom: 3%;
+    flex-direction: column;
+    padding-bottom: 3%;
 }
-
 label[for="message"] p {
-  margin-right: auto;
-  margin-bottom: 5%;
+    margin-right: auto;
+    margin-bottom: 5%;
 }
-
 #sign-up-form label {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
-
 #sign-up-form label:last-child {
-  padding: 0;
+    padding: 0;
 }
-
+.form-labels-checkboxes {
+    display: flex;
+    flex-direction: column;
+}
 #sign-up-form label input {
-  margin-right: 12px;
-  width: 25px;
-  margin-bottom: 0px;
+    margin-right: 12px;
+    width: 25px;
+    margin-bottom: 0px;
 }
-
 select {
-  margin: 10px 0 0;
-  width: 100%;
-  min-height: 2em;
-  background-color: white;
-  font-size: 16px;
+    margin: 10px 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: white;
+    font-size: 16px;
 }
-
-legend {
-  width: 100%;
-  padding-top: 8%;
-}
-
 button[type="submit"] {
-  display: block;
-  margin: 0 auto;
-  font-size: 1rem;
-  color: #602f27;
-  background-color: #fff8de;
-  border: 1px solid #602f27;
-  min-width: 150px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #602f27;
+    background-color: #fff8de;
+    border: 1px solid #602f27;
+    min-width: 150px;
 }
 
+/* layout classes */
 .orangey-bg {
-  background-color: #f1935644;
-  border-top: 2px solid #fff8de;
-  border-bottom: 2px solid #fff8de;
+    background-color: #f1935644;
+    border-top: 2px solid #fff8de;
+    border-bottom: 2px solid #fff8de;
 }
-
 .orangey-bg:last-of-type {
-  background-color: #f1935644;
-  border-bottom: 3px solid #f19356;
+    background-color: #f1935644;
+    border-bottom: 3px solid #f19356;
 }
-
-.map-section {
-  background-color: #f1935644;
-  border-bottom: 2px solid #f19356;
-}
-
-#map-div {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.map {
-  border: 2px solid #fff8de;
-  margin: 14px 0;
-}
-
 .heading-layout {
-  display: flex;
-  padding-top: 8%;
-  padding-bottom: 5%;
+    display: flex;
+    padding-top: 8%;
+    padding-bottom: 5%;
 }
-
-.text-layout {
-  line-height: 150%;
-}
-
-.flex-labels-checkboxes {
-  display: flex;
-  flex-direction: column;
-}
-
-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-li {
-  list-style-type: none;
-}
-
 div.heading-layout i {
-  margin-right: 5px;
+    margin-right: 5px;
+}
+.text-layout {
+    line-height: 150%;
 }
 
-hr {
-  border-top: 1px solid #9ba5b1;
+/* map */
+#map-div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.map {
+    border: 2px solid #fff8de;
+    margin: 14px 0;
 }
 
 .copyright {
-  font-size: 40%;
-  padding-top: 12%;
-  text-align: right;
+    font-size: 40%;
+    padding-top: 12%;
+    text-align: right;
 }
-
 footer {
-  width: 100%;
-  background-color: #fff8de;
-  font-size: 150%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+    width: 100%;
+    background-color: #fff8de;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
-/*for larger screens use flexbox for history section
+/*note: for larger screens use flexbox for history section?
         display: flex;
         justify-content: flex-start;
         align-items: center; 
         
-   enlarge image, form, map*/
+   enlarge image, form, map, video*/
+}

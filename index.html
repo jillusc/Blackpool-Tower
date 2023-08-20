@@ -11,6 +11,7 @@
     <meta name="author" content="jillus" />
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="icon" type="image/png" href="assets/images/blackpool-tower-favicon.png">
+    <title>The Blackpool Tower</title>
 </head>
 
 <body>
@@ -18,15 +19,22 @@
         <a href="index.html">
             <h1 id="logo">Blackpool Tower</h1>
         </a>
+        
+        <!-- <input type="checkbox" id="burger" name="burger" />
+        <label for="burger" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label> -->
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="">Link#1</a></li>
+                <li><a href="#video-container">Video</a></li>
                 <li><a href="">Link#2</a></li>
             </ul>
-        </nav><!--
-        <input type="checkbox" id="burger" name="burger" />
-        <label for="burger" class="burger-label"> </label>-->
+        </nav>
+        <!-- <input type="checkbox" id="burger" name="burger" />
+        <label for="burger" class="burger-label"> </label> -->
     </header>
     <main>
         <section id="image-top">
@@ -71,6 +79,10 @@
                     Entertainment, featuring a dungeon-themed <span>Escape Room</span>.
                 </p>
             </div>
+            <div id="video-container">
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/F55M-jpe9WU" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
         </section>
 
         <section id="history-section" class="orangey-bg">
@@ -113,11 +125,11 @@
             <div id="form">
                 <form id="sign-up-form" action="mailto:email@gmail.org">
                     <fieldset>
-                        <label for="name" id="name-label" style="padding-top: 5%">Name<input id="name" name="name" type="text"
+                        <label for="name" class="full-width">Name<input id="name" name="name" type="text"
                                 placeholder="(required)" required /></label>
-                        <label for="email" id="email-label">Email<input id="email" name="email" type="email"
+                        <label for="email" class="full-width">Email<input id="email" name="email" type="email"
                                 placeholder="Sign up!" required /></label>
-                        <label for="age-select" placeholder="">Age<input id="age-select" list="age" name="age-select" required>
+                        <label for="age-select" class="full-width">Age<input id="age-select" list="age" name="age-select" required></label>
                             <datalist id="age">
                                 <option value="15 or younger">
                                 <option value="16-24 yrs">
@@ -127,7 +139,6 @@
                                 <option value="55-64 yrs">
                                 <option value="65 or older">
                             </datalist>
-                            </select>
                     </fieldset>
                     <fieldset>
                         <legend>
@@ -157,19 +168,18 @@
                                 placeholder="Comments"></textarea>
                         </label>
                     <button type="submit" id="submit">Send</button>
-                    </form>
-                </fieldset>
-            </div>
+                    </fieldset>
+                </form>
         </section>
         <section id="map-section" class="orangey-bg">
             <div class="heading-layout">
                 <i class="fa-solid fa-map-pin"></i><h2>Visit</h2>
-            <p class="text-layout">The Blackpool Tower<br> The Promenade <br> FY1 4BJ<br></p></div>
-                        <div id="map-div">
+            </div>
+                        <div id="map-div"><p class="text-layout">The Blackpool Tower<br> The Promenade <br> FY1 4BJ<br></p>
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1177.7583429068!2d-3.056582243098989!3d53.81588339307864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b44703c3e018d%3A0x759f7bded7de6841!2sBlackpool%20Tower%2C%20Blackpool%2C%20UK!5e0!3m2!1sen!2sde!4v1692275559308!5m2!1sen!2sde"
                                 title="Embedded Google Map showing Blackpool Tower's location" referrerpolicy="no-referrer-when-downgrade"
-                                class="map" width="50%" height="50%"></iframe>
+                                class="map"></iframe>
                         </div>
             <p class="text-layout"><span>By Car</span><br>
             Take the M6 to junction 32 and then the M55 to junction 4. <br>Follow the brown signs for Town Centre Attractions and

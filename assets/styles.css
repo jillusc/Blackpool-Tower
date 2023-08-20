@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@300;400;700&display=swap");
 
+/** General **/
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-    min-height: 100vh;
+  /*  min-height: 100vh; */
     background-color: #e7d0b9;
     font-family: "Josefin Sans", sans-serif;
     color: #602f27;
@@ -16,75 +17,81 @@ body {
 
 header {
     width: 100%;
-    padding: 10%;
+    padding: 10% 10% 5% 10%;
     background-color: #fff8de;
     position: fixed;
     z-index: 99;
     border-bottom: 3px solid #f19356;
 }
-
-a {
-    text-decoration: none;
-    color: #602f27;
-}
-
-a:hover {
-    color: #9ba5b1;
-}
-
-.active {
-    text-decoration: underline;
-}
-
-nav {}
-
-span {
-    font-weight: bold;
-}
-
-#image-top {
-    height: 540px;
-    width: 100%;
-    position: relative;
-    background: url("images/free-wide.webp") no-repeat center center/cover;
-    border-bottom: 2px solid #602f27;
-}
-
-#image-text {
-    background-color: rgba(0, 0, 0, 0.2);
-    font-size: 115%;
-    position: absolute;
-    top: 20%;
-    right: 20%;
-    width: fit-content;
-    min-height: fit-content;
-    padding: 15px;
-    letter-spacing: 0.5px;
-    color: #f19356;
-}
-
 #logo {
     color: #602f27;
     text-align: center;
     padding-bottom: 8%;
 }
+section {
+    padding: 0 5% 5% 5%;
+}
+/*main {
+    padding-top: 0px;
+} */
+
+/** Links **/ 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #9ba5b1;
+}
+.active {
+    text-decoration: underline;
+}
+
+
+/** Typography **/
+h2 {
+    font-size: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+/** Medien**/
+#image-top {
+    height: 540px;
+    width: 100%;
+    position: relative;
+    background: url("images/free-wide.webp") no-repeat center center/cover;
+    background-position: 30% 100%;
+    border-bottom: 2px solid #602f27;
+}
+
+#image-text {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 110%;
+    position: absolute;
+    top: 29%;
+    right: 5%;
+    width: 40%;
+    text-align: right;
+    padding: 5px;
+    letter-spacing: 0.5px;
+    color: #f19356;
+}
 
 #history-section img {
-    width: 252px;
-    display: block;
+    width: 100%;
     margin: 0 auto 0;
-    padding-bottom: 14px;
+    padding: 14px 0;
 }
 
-#form {
+/*#form {
     margin: -8% 0 0;
-}
+} */
 
 #sign-up-form {
-    width: 252px;
-    display: block;
-    margin: 0 auto 0;
-    padding-bottom: 14px;
+    width: 100%;
 }
 
 fieldset {
@@ -113,6 +120,37 @@ label {
     padding: 0 0 12%;
 }
 
+#sign-up-form label.full-width input {
+    width: 100%;
+    max-width: 75%;
+    margin-left: auto;
+}
+
+label[for="message"] {
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+
+label[for="message"] p {
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+#sign-up-form label {
+    display: flex;
+    align-items: center;
+}
+
+#sign-up-form label:last-child {
+    padding: 0;
+}
+
+#sign-up-form label input {
+    margin-right: 12px;
+    width: 25px;
+    margin-bottom: 0px;
+}
+
 select {
     margin: 10px 0 0;
     width: 100%;
@@ -121,18 +159,18 @@ select {
     font-size: 16px;
 }
 
-legend {
+/*legend {
     width: 100%;
     padding-top: 8%;
-}
+} */
 
 button[type="submit"] {
     display: block;
     margin: 0 auto;
     font-size: 1rem;
     color: #602f27;
-    background-color: #e7d0b9;
-    border-color: 1px solid #602f27;
+    background-color: #fff8de;
+    border: 1px solid #602f27;
     min-width: 150px;
 }
 
@@ -147,29 +185,29 @@ button[type="submit"] {
     border-bottom: 3px solid #f19356;
 }
 
-.map-section {
+/*.map-section {
     background-color: #f1935644;
     border-bottom: 2px solid #f19356;
-}
+} */
 
 #map-div {
-    display: block;
-    padding: 5%;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .map {
     border: 2px solid #fff8de;
+    margin: 14px 0;
 }
 
 .heading-layout {
-    margin-left: 5%;
+    display: flex;
     padding-top: 8%;
     padding-bottom: 5%;
 }
 
 .text-layout {
-    margin: 0 5% 5%;
     line-height: 150%;
 }
 
@@ -187,6 +225,10 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+div.heading-layout i {
+    margin-right: 5px;
 }
 
 hr {
@@ -215,3 +257,79 @@ footer {
         align-items: center; 
         
    enlarge image, form, map*/
+
+
+
+/* Add a class to the navigation menu for toggling */
+nav {
+    display: block;
+    /* Display the menu by default */
+}
+
+/* Style the burger icon */
+.burger-icon {
+    display: none;
+    /* Hide the icon by default */
+}
+
+/* Style the burger icon only for screens 600px or less */
+@media only screen and (max-width: 600px) {
+    .burger-icon {
+        display: block;
+        /* Display the icon when the screen width is 600px or less */
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .burger-icon span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #602f27;
+        position: absolute;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .burger-icon span:nth-child(1) {
+        top: 0;
+    }
+
+    .burger-icon span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .burger-icon span:nth-child(3) {
+        bottom: 0;
+    }
+
+    /* Style for the checked state of the burger icon */
+    input[type="checkbox"]:checked+.burger-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    input[type="checkbox"]:checked+.burger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    input[type="checkbox"]:checked+.burger-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    /* Display the navigation menu when the burger icon is checked */
+    input[type="checkbox"]:checked~nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        z-index: 99;
+    }
+}

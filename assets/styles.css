@@ -21,6 +21,7 @@ header {
     background-color: #fff8de;
     position: fixed;
     z-index: 99;
+    top: 0;
     border-bottom: 3px solid #f19356;
 }
 
@@ -61,9 +62,9 @@ a:focus {
     text-decoration: underline;
 }
 
-/*.anchor-link {
-    scroll-margin-top: 50px;
-}*/
+.anchor-link {
+    scroll-margin-top: 5rem;
+}
 
 
 /* text */
@@ -102,10 +103,6 @@ span {
 
 
 /* layout classes */
-.spacer {
-    height: 1rem;
-}
-
 .orangey-bg {
     background-color: #f1935644;
     border-top: 2px solid #fff8de;
@@ -130,6 +127,7 @@ div.heading-layout i {
 
 /* media items */
 #hero-image {
+    margin-top: 5rem;
     height: 540px;
     width: 100%;
     position: relative;
@@ -142,7 +140,7 @@ div.heading-layout i {
     background-color: rgba(0, 0, 0, 0.2);
     font-size: 110%;
     position: absolute;
-    top: 29%;
+    top: 15%;
     right: 5%;
     width: 40%;
     text-align: right;
@@ -303,66 +301,128 @@ footer {
 
 
 /* media query: large or landscape phones (576px and up) */
-   @media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
 
-header {
+    header {
         width: 100%;
         padding: 5% 0 3% 0;
         background-color: #fff8de;
         border-bottom: 3px solid #f19356;
     }
 
-#logo {
-    color: #602f27;
-    font-size: 2rem;
-    text-align: left;
-    margin-left: 8%;
-    padding-bottom: 1%;
-}
+    #logo {
+        color: #602f27;
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 8%;
+        padding-bottom: 1%;
+    }
 
-h1 {
-    font-size: 2rem;
-}
-
-nav > ul {
-    margin-right: 5%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 20px;
-}
-
-#hero-image-text {
-    background-color: rgba(0, 0, 0, 0.2);
-    font-size: 120%;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    width: 30%;
-    text-align: right;
-    padding: 5px 10px 5px 2px;
-    letter-spacing: 0.5px;
-    color: #f19356;
-}
-
-#video-container {
-    margin-top: 5%;
-}
+    h1 {
+        font-size: 2rem;
+    }
 
 
 
-fieldset {
-    border: none;
-    margin-top: 5%;
-    border-bottom: 2px solid #9ba5b1;
-}
+    nav>ul {
+        margin-right: 5%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+    }
 
-fieldset:last-of-type {
-    border: none;
-    margin-bottom: 5%;
-}
+    #hero-image-text {
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 120%;
+        position: absolute;
+        top: 25%;
+        right: 5%;
+        width: 30%;
+        text-align: right;
+        padding: 5px 10px 5px 2px;
+        letter-spacing: 0.5px;
+        color: #f19356;
+    }
 
-label {
-    padding: 0 0 5%;
-}
-   }
+    #video-container {
+        margin-top: 5%;
+    }
+
+    fieldset {
+        border: none;
+        margin-top: 5%;
+        border-bottom: 2px solid #9ba5b1;
+    }
+
+    fieldset:last-of-type {
+        border: none;
+        margin-bottom: 5%;
+    }
+
+    label {
+        padding: 0 0 5%;
+    }
+
+    /* media query: tablets and larger (576px and up) */
+    @media screen and (min-width: 768px) {
+
+        header {
+            width: 100%;
+            padding: 0 0 3% 0;
+            background-color: #fff8de;
+            border-bottom: 3px solid #f19356;
+        }
+
+        #logo {
+            color: #602f27;
+            font-size: 2rem;
+            text-align: left;
+            margin-left: 8%;
+            padding-bottom: 1%;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        nav>ul {
+            margin-right: 5%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #hero-image-text {
+            background-color: rgba(0, 0, 0, 0.2);
+            font-size: 120%;
+            position: absolute;
+            top: 25%;
+            right: 5%;
+            width: 30%;
+            text-align: right;
+            padding: 5px 10px 5px 2px;
+            letter-spacing: 0.5px;
+            color: #f19356;
+        }
+
+        #video-container {
+            margin-top: 5%;
+        }
+
+        fieldset {
+            border: none;
+            margin-top: 5%;
+            border-bottom: 2px solid #9ba5b1;
+        }
+
+        fieldset:last-of-type {
+            border: none;
+            margin-bottom: 5%;
+        }
+
+        label {
+            padding: 0 0 5%;
+        }
+    }

@@ -22,9 +22,9 @@
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#history-section">History</a></li>
-                <li><a href="#video-container">Video</a></li>
-                <li><a href="#form-section"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a href="#history-section" class="anchor-link" aria-label="Jump to the History section">History</a></li>
+                <li><a href="#video-container" class="anchor-link" aria-label="Jump to see a vdeo about the Tower Ballroom">Video</a></li>
+                <li><a href="#form-section" class="anchor-link" aria-label="Sign up for news and events"><i class="fa-regular fa-envelope"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -49,11 +49,12 @@
                     year to the archetypal northern English seaside town, promising fun
                     for all the family.
                 </p>
+            <div class="spacer"></div>
             </div>
             <div>
                 <p>
                     It is home to the grand <span>Tower Ballroom</span> which boasts a
-                    real Wurlitzer organ and a rich history of hosting dance shows beneath 14 ornate chandeliers.
+                    real Wurlitzer organ and a rich history of hosting dance shows beneath 14 ornate chandeliers. [See video below.]
                 </p>
             </div>
             <div>
@@ -72,8 +73,10 @@
                 </p>
             </div>
             <div id="video-container">
+                <h4>Watch:</h4>
                 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/F55M-jpe9WU" frameborder="0"
                         allowfullscreen controls></iframe>
+                        <p class="font-weight-100 ">This video shows the Tower Ballroom from the unique perspective of one the amazingly-talented organists as he begins work.</p>
             </div>
         </section>
 
@@ -94,7 +97,7 @@
                     million bricks and more than 2,000 tons of steel and cast iron.
                 </p>
             </div>
-            <div><img src="assets/images/free-tower.jpg" alt="Blackpool Tower and the promenade seen from the sea" />
+            <div><img src="assets/images/free-tower.webp" alt="Blackpool Tower and the promenade seen from the sea" />
             </div>
             <div>
                 <p>
@@ -115,13 +118,13 @@
                 </p>
             </div>
             <div id="form">
-                <form id="sign-up-form" action="mailto:jillus@hotmail.com">
+                <form id="sign-up-form" action="mailto:email@gmail.org">
                     <fieldset>
                         <label for="name" class="full-width">Name<input id="name" name="name" type="text"
                                 placeholder="(required)" required /></label>
                         <label for="email" class="full-width">Email<input id="email" name="email" type="email"
                                 placeholder="Sign up!" required /></label>
-                        <label for="age-select" class="full-width">Age<input id="age-select" list="age" name="age-select" required></label>
+                        <label for="age-select" class="full-width">Age<input id="age-select" list="age" name="age-select"></label>
                             <datalist id="age">
                                 <option value="15 or younger">
                                 <option value="16-24 yrs">
@@ -137,7 +140,7 @@
                             <h4>About me:</h4>
                             <p class="font-weight-100">(please select all that apply)</p>
                         </legend>
-                        <div class="form-labels-checkboxes">
+                        <div class="about-me-checkboxes-div">
                         <label><input type="checkbox" name="resident" value="resident">
                             I'm a resident of Blackpool</label>
                         <label><input type="checkbox" name="frequent-visitor" value="frequent-visitor">
@@ -193,6 +196,9 @@
                 <li><a href="https://www.twitter.com/thebpltower" target="_blank" rel="noopener"
                         aria-label="Visit the official Blackpool Tower Twitter page (opens in new tab)"><i
                             class="fa-brands fa-square-twitter" style="color: #602f27;"></i></a></li>
+                <li><a href="https://www.youtube.com/@TheBlackpoolTowerOfficial" target="_blank" rel="noopener"
+                        aria-label="Visit the official Blackpool Tower Youtube channel (opens in new tab)"><i
+                            class="fa-brands fa-square-youtube" style="color: #602f27;"></i></a></li>
             </ul>
             <br>
             <hr>

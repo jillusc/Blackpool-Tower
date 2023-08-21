@@ -43,7 +43,7 @@ li {
 }
 
 hr {
-    border-top: 1px solid #9ba5b1;
+    border-top: 2px solid #9ba5b1;
 }
 
 
@@ -53,13 +53,17 @@ a {
     color: inherit;
 }
 
-a:hover {
+a:focus {
     color: #9ba5b1;
 }
 
 .active {
     text-decoration: underline;
 }
+
+/*.anchor-link {
+    scroll-margin-top: 50px;
+}*/
 
 
 /* text */
@@ -75,8 +79,7 @@ h2 {
 
 h4 {
     font-size: 17px;
-    padding-top: 8%;
-    padding-bottom:2%;
+    padding-bottom: 2%;
 }
 
 p {
@@ -86,6 +89,7 @@ p {
 .font-weight-100 {
     font-weight: 100;
     font-size: .9rem;
+    line-height: 95% !important;
 }
 
 span {
@@ -98,6 +102,10 @@ span {
 
 
 /* layout classes */
+.spacer {
+    height: 1rem;
+}
+
 .orangey-bg {
     background-color: #f1935644;
     border-top: 2px solid #fff8de;
@@ -149,11 +157,17 @@ div.heading-layout i {
     padding: 14px 0;
 }
 
+#video-container {
+    margin-top: 8%;
+}
+
 /* form */
-#form-section {}
+#form-section {
+    padding-bottom: 0;
+}
 
 legend {
-    padding: 12px 0 0;
+    margin-bottom: 8%;
 }
 
 #sign-up-form {
@@ -162,13 +176,13 @@ legend {
 
 fieldset {
     border: none;
-    padding: 15px 0 0;
+    margin-top: 10%;
     border-bottom: 2px solid #9ba5b1;
 }
 
 fieldset:last-of-type {
     border: none;
-    padding-bottom: 12%;
+    margin-bottom: 10%;
 }
 
 input,
@@ -186,7 +200,6 @@ input {}
 
 label {
     padding: 0 0 10%;
-    
 }
 
 #sign-up-form label.full-width input {
@@ -202,7 +215,7 @@ label[for="message"] {
 
 label[for="message"] p {
     margin-right: auto;
-    margin-bottom: 5%;
+    margin-bottom: 15px;
 }
 
 #sign-up-form label {
@@ -214,17 +227,17 @@ label[for="message"] p {
     padding: 0;
 }
 
-.form-labels-checkboxes {
+.about-me-checkboxes-div {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2em;
+    padding-bottom: 12%;
 }
 
-.form-labels-checkboxes:last-of-type {
+/* .about-me-checkboxes-div:last-of-type {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2em;
-}
+    padding-bottom: 12%;
+}*/
 
 #sign-up-form label input {
     margin-right: 12px;
@@ -257,6 +270,7 @@ button[type="submit"] {
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-bottom: 2%;
 }
 
 .map {
@@ -267,7 +281,7 @@ button[type="submit"] {
 .copyright {
     font-size: 40%;
     padding-top: 12%;
-    text-align: right;
+    text-align: center;
 }
 
 footer {
@@ -286,4 +300,69 @@ footer {
         align-items: center; 
         
    enlarge image, form, map, video*/
+
+
+/* media query: large or landscape phones (576px and up) */
+   @media screen and (min-width: 576px) {
+
+header {
+        width: 100%;
+        padding: 5% 0 3% 0;
+        background-color: #fff8de;
+        border-bottom: 3px solid #f19356;
+    }
+
+#logo {
+    color: #602f27;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 8%;
+    padding-bottom: 1%;
 }
+
+h1 {
+    font-size: 2rem;
+}
+
+nav > ul {
+    margin-right: 5%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+#hero-image-text {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 120%;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 30%;
+    text-align: right;
+    padding: 5px 10px 5px 2px;
+    letter-spacing: 0.5px;
+    color: #f19356;
+}
+
+#video-container {
+    margin-top: 5%;
+}
+
+
+
+fieldset {
+    border: none;
+    margin-top: 5%;
+    border-bottom: 2px solid #9ba5b1;
+}
+
+fieldset:last-of-type {
+    border: none;
+    margin-bottom: 5%;
+}
+
+label {
+    padding: 0 0 5%;
+}
+   }

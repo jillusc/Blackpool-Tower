@@ -27,7 +27,6 @@ header {
 
 section {
     padding: 0 5% 5% 5%;
-    scroll-padding-top: 4rem;
 }
 
 main {}
@@ -41,6 +40,10 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+div: {
+    padding-bottom: 5%,
 }
 
 hr {
@@ -62,9 +65,9 @@ a:focus {
     text-decoration: underline;
 }
 
-.anchor-link {
-    scroll-margin-top: 5rem;
-}
+/*.anchor-link {
+    top: 50rem;
+}*/
 
 
 /* text */
@@ -85,6 +88,7 @@ h4 {
 
 p {
     line-height: 150%;
+    padding-bottom: 2%;
 }
 
 .font-weight-100 {
@@ -157,15 +161,12 @@ div.heading-layout i {
 
 #video-container {
     margin-top: 8%;
+    width: 100%;
 }
 
 /* form */
 #form-section {
     padding-bottom: 0;
-}
-
-legend {
-    margin-bottom: 8%;
 }
 
 #sign-up-form {
@@ -175,7 +176,6 @@ legend {
 fieldset {
     border: none;
     margin-top: 10%;
-    border-bottom: 2px solid #9ba5b1;
 }
 
 fieldset:last-of-type {
@@ -194,9 +194,11 @@ textarea {
     padding: 2%;
 }
 
-input {}
-
 label {
+    padding: 0 0 10%;
+}
+
+.full-width {
     padding: 0 0 10%;
 }
 
@@ -213,7 +215,7 @@ label[for="message"] {
 
 label[for="message"] p {
     margin-right: auto;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
 }
 
 #sign-up-form label {
@@ -224,18 +226,6 @@ label[for="message"] p {
 #sign-up-form label:last-child {
     padding: 0;
 }
-
-.about-me-checkboxes-div {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 12%;
-}
-
-/* .about-me-checkboxes-div:last-of-type {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 12%;
-}*/
 
 #sign-up-form label input {
     margin-right: 12px;
@@ -268,12 +258,12 @@ button[type="submit"] {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-bottom: 2%;
 }
 
 .map {
     border: 2px solid #fff8de;
-    margin: 14px 0;
+    width: 100%;
+    height: 252px;
 }
 
 .copyright {
@@ -322,8 +312,6 @@ footer {
         font-size: 2rem;
     }
 
-
-
     nav>ul {
         margin-right: 5%;
         display: flex;
@@ -334,11 +322,11 @@ footer {
 
     #hero-image-text {
         background-color: rgba(0, 0, 0, 0.2);
-        font-size: 120%;
+        font-size: 125%;
         position: absolute;
-        top: 25%;
-        right: 5%;
-        width: 30%;
+        top: 14%;
+        right: 10%;
+        width: 40%;
         text-align: right;
         padding: 5px 10px 5px 2px;
         letter-spacing: 0.5px;
@@ -349,80 +337,41 @@ footer {
         margin-top: 5%;
     }
 
+    #organist-video {
+        width: 100%;
+        height: 300px;
+    }
+
     fieldset {
         border: none;
-        margin-top: 5%;
-        border-bottom: 2px solid #9ba5b1;
+        margin: 0 10% 0;
     }
 
     fieldset:last-of-type {
         border: none;
-        margin-bottom: 5%;
+        margin: 5% 10%;
     }
 
-    label {
-        padding: 0 0 5%;
+    #sign-up-form label.full-width input {
+        width: 70%;
+        margin-left: 25%;
     }
 
-    /* media query: tablets and larger (576px and up) */
-    @media screen and (min-width: 768px) {
-
-        header {
-            width: 100%;
-            padding: 0 0 3% 0;
-            background-color: #fff8de;
-            border-bottom: 3px solid #f19356;
-        }
-
-        #logo {
-            color: #602f27;
-            font-size: 2rem;
-            text-align: left;
-            margin-left: 8%;
-            padding-bottom: 1%;
-        }
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        nav>ul {
-            margin-right: 5%;
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            gap: 20px;
-        }
-
-        #hero-image-text {
-            background-color: rgba(0, 0, 0, 0.2);
-            font-size: 120%;
-            position: absolute;
-            top: 25%;
-            right: 5%;
-            width: 30%;
-            text-align: right;
-            padding: 5px 10px 5px 2px;
-            letter-spacing: 0.5px;
-            color: #f19356;
-        }
-
-        #video-container {
-            margin-top: 5%;
-        }
-
-        fieldset {
-            border: none;
-            margin-top: 5%;
-            border-bottom: 2px solid #9ba5b1;
-        }
-
-        fieldset:last-of-type {
-            border: none;
-            margin-bottom: 5%;
-        }
-
-        label {
-            padding: 0 0 5%;
-        }
+    label[for="message"] p {
+        margin-right: auto;
+        margin-bottom: 0;
+        padding-bottom: 2%;
     }
+
+    textarea {
+        margin: 0 0 2%;
+        width: 100%;
+        min-height: 2em;
+        font-family: "Josefin Sans";
+        font-size: 0.75em;
+        border: 1px solid black;
+        padding: 2%;
+    }
+
+    /* media query: tablets and larger (768px and up) */
+    @media screen and (min-width: 768px) {}

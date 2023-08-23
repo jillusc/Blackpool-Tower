@@ -151,7 +151,7 @@ div.heading-layout i {
     color: #f19356;
 }
 
-#history-section img {
+#past-section img {
     width: 100%;
     margin: 0 auto 0;
     padding: 14px 0;
@@ -413,10 +413,10 @@ footer {
         padding-bottom: 0;
     }
 
-                #hero-image {
-                    margin-top: 8%;
-                }
- 
+    #hero-image {
+        margin-top: 8%;
+    }
+
     #hero-image-text {
         background-color: rgba(0, 0, 0, 0.2);
         font-size: 150%;
@@ -468,27 +468,33 @@ footer {
         font-size: 0.9rem;
         padding: 1%;
     }
+
+    .copyright {
+        font-size: 50%;
+        padding-top: 12%;
+        text-align: center;
+    }
 }
 
 /* media query: laptops and desktops (992px and up) */
 @media screen and (min-width: 992px) {
     header {
-            width: 100%;
-            height: 12%;
-            background-color: #fff8de;
-            flex-direction: row;
-            align-items: baseline;
-            justify-content: space-between;
-            padding: 7% 2% 5% 4%;
-            border-bottom: 3px solid #f19356;
-        }
-    
-        #logo {
-            color: #602f27;
-            font-size: 2rem;
-            text-align: left;
-            padding-bottom: 0;
-        }
+        width: 100%;
+        height: 12%;
+        background-color: #fff8de;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 7% 2% 5% 4%;
+        border-bottom: 3px solid #f19356;
+    }
+
+    #logo {
+        color: #602f27;
+        font-size: 2rem;
+        text-align: left;
+        padding-bottom: 0;
+    }
 
     #hero-image-text {
         background-color: rgba(0, 0, 0, 0.2);

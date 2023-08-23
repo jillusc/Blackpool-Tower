@@ -17,7 +17,7 @@ body {
 
 header {
     width: 100%;
-    padding: 10% 10% 5% 10%;
+    padding: 10% 0 2% 0;
     background-color: #fff8de;
     position: fixed;
     z-index: 99;
@@ -32,10 +32,11 @@ section {
 }
 
 ul {
+    font-size: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 li {
@@ -48,9 +49,8 @@ hr {
 
 /* for anchors to leave top space */
 .anchor-link {
-    margin-top: 80%;
+    margin-top: 200px;
 }
-
 
 /* links */
 a {
@@ -128,7 +128,7 @@ div.heading-layout i {
 
 /* media items */
 #hero-image {
-    margin-top: 29%;
+    margin-top: 27%;
     padding: 0;
     height: 540px;
     width: 100%;
@@ -151,28 +151,19 @@ div.heading-layout i {
     color: #f19356;
 }
 
-#past-section img {
-    width: 100%;
-    margin: 0 auto 0;
-    padding: 14px 0;
-}
-
 #video-container {
     margin-top: 8%;
     width: 100%;
 }
 
-#photos-div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: content;
-    gap: 14px;
-    column-count: 2;
+
+
+.landscape {
+    max-width: 100%;
 }
 
-#photos-div img {
-    line-height: 1em;
-    max-width: 40%;
+.portrait {
+    max-width: 60%;
 }
 
 /* form */
@@ -301,9 +292,9 @@ footer {
         height: 12%;
         background-color: #fff8de;
         flex-direction: row;
-        align-items: baseline;
+        align-items: flex-end;
         justify-content: space-between;
-        padding: 7% 2% 1% 4%;
+        padding: 5% 2% 2% 5%;
         border-bottom: 3px solid #f19356;
     }
 
@@ -319,7 +310,7 @@ footer {
     }
 
     nav>ul {
-        margin-right: 5%;
+        font-size: 100%;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -402,8 +393,17 @@ footer {
         flex-direction: row;
         align-items: baseline;
         justify-content: space-between;
-        padding: 7% 2% 5% 4%;
+        padding: 5% 2% 0 5%;
+        margin: 0;
         border-bottom: 3px solid #f19356;
+    }
+
+    ul {
+        font-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
     #logo {
@@ -421,7 +421,7 @@ footer {
         background-color: rgba(0, 0, 0, 0.2);
         font-size: 150%;
         position: absolute;
-        top: 12%;
+        top: 17%;
         right: 8%;
         width: 40%;
         text-align: right;
@@ -485,7 +485,7 @@ footer {
         flex-direction: row;
         align-items: baseline;
         justify-content: space-between;
-        padding: 7% 2% 5% 4%;
+        padding: 4% 2% 0 4%;
         border-bottom: 3px solid #f19356;
     }
 

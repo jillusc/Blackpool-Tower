@@ -496,6 +496,10 @@ footer {
         padding-bottom: 0;
     }
 
+    #hero-image {
+        margin-top: 8%;
+    }
+
     #hero-image-text {
         background-color: rgba(0, 0, 0, 0.2);
         font-size: 190%;

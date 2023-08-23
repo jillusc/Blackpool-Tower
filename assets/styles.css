@@ -22,14 +22,14 @@ header {
     position: fixed;
     z-index: 99;
     top: 0;
+    display: flex;
+    flex-direction: column;
     border-bottom: 3px solid #f19356;
 }
 
 section {
     padding: 0 5% 5% 5%;
 }
-
-main {}
 
 ul {
     display: flex;
@@ -46,6 +46,11 @@ hr {
     border-top: 1px solid #602f27;
 }
 
+/* for anchors to leave top space */
+.anchor-link {
+    margin-top: 80%;
+}
+
 
 /* links */
 a {
@@ -60,11 +65,6 @@ a:focus {
 .active {
     text-decoration: underline;
 }
-
-.anchor-link {
-    top: 200px;
-}
-
 
 /* text */
 #logo {
@@ -128,7 +128,8 @@ div.heading-layout i {
 
 /* media items */
 #hero-image {
-    margin-top: 5rem;
+    margin-top: 29%;
+    padding: 0;
     height: 540px;
     width: 100%;
     position: relative;
@@ -163,13 +164,15 @@ div.heading-layout i {
 
 #photos-div {
     display: flex;
-    flex-direction: column;
-    column-count: 3;
+    flex-wrap: wrap;
+    flex-basis: content;
+    gap: 14px;
+    column-count: 2;
 }
 
 #photos-div img {
-    width: 100%;
-
+    line-height: 1em;
+    max-width: 40%;
 }
 
 /* form */
@@ -254,9 +257,15 @@ button[type="submit"] {
     min-height: 1.5rem;
 }
 
+button:active {
+    color: #602f27;
+    background-color: #f19356;
+    border: 1px solid #602f27;
+}
 
 /* map */
 #map-div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -289,8 +298,12 @@ footer {
 
     header {
         width: 100%;
-        padding: 5% 0 3% 0;
+        height: 12%;
         background-color: #fff8de;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 7% 2% 1% 4%;
         border-bottom: 3px solid #f19356;
     }
 
@@ -298,8 +311,7 @@ footer {
         color: #602f27;
         font-size: 2rem;
         text-align: left;
-        margin-left: 8%;
-        padding-bottom: 1%;
+        padding-bottom: 0;
     }
 
     h1 {
@@ -314,12 +326,16 @@ footer {
         gap: 20px;
     }
 
+    #hero-image {
+        margin-top: 12%;
+    }
+
     #hero-image-text {
         background-color: rgba(0, 0, 0, 0.2);
         font-size: 125%;
         position: absolute;
-        top: 14%;
-        right: 10%;
+        top: 11%;
+        right: 8%;
         width: 40%;
         text-align: right;
         padding: 5px 10px 5px 2px;
@@ -377,29 +393,41 @@ footer {
 
 }
 
-
-
 /* media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+    header {
+        width: 100%;
+        height: 12%;
+        background-color: #fff8de;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 7% 2% 5% 4%;
+        border-bottom: 3px solid #f19356;
+    }
+
+    #logo {
+        color: #602f27;
+        font-size: 2rem;
+        text-align: left;
+        padding-bottom: 0;
+    }
+
+                #hero-image {
+                    margin-top: 8%;
+                }
+ 
     #hero-image-text {
         background-color: rgba(0, 0, 0, 0.2);
         font-size: 150%;
         position: absolute;
-        top: 25%;
-        right: 12%;
+        top: 12%;
+        right: 8%;
         width: 40%;
         text-align: right;
         padding: 5px 10px 5px 2px;
         letter-spacing: 0.5px;
         color: #f19356;
-    }
-
-    #logo {
-        color: #602f27;
-        font-size: 2.5rem;
-        text-align: left;
-        margin-left: 8%;
-        padding-bottom: 1%;
     }
 
     #form {
@@ -444,11 +472,29 @@ footer {
 
 /* media query: laptops and desktops (992px and up) */
 @media screen and (min-width: 992px) {
+    header {
+            width: 100%;
+            height: 12%;
+            background-color: #fff8de;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+            padding: 7% 2% 5% 4%;
+            border-bottom: 3px solid #f19356;
+        }
+    
+        #logo {
+            color: #602f27;
+            font-size: 2rem;
+            text-align: left;
+            padding-bottom: 0;
+        }
+
     #hero-image-text {
         background-color: rgba(0, 0, 0, 0.2);
         font-size: 190%;
         position: absolute;
-        top: 25%;
+        top: 17%;
         right: 8%;
         width: 47.5%;
         text-align: right;

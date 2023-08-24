@@ -16,7 +16,8 @@ body {
 
 header {
     width: 100%;
-    padding: 10% 0 4% 0;
+    height: 13%;
+    padding: 12% 0 6% 0;
     background-color: #fff8de;
     position: fixed;
     z-index: 99;
@@ -64,7 +65,7 @@ a:focus {
 #logo {
     color: #602f27;
     text-align: center;
-    padding-bottom: 8%;
+    padding-bottom: 6%;
 }
 
 h2 {
@@ -155,6 +156,7 @@ div.heading-layout i {
     border: 2px solid black;
 }
 
+/* gallery */
 /*  code from 3rd party via: https: //www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 .row {
     display: flex;
@@ -176,38 +178,7 @@ div.heading-layout i {
 
 /* end of 3rd party code */
 
-/* form */
-/*#form {
-input {
-    margin: 0 0 5%;
-    width: 100%;
-    min-height: 2em;
-    font-family: "Josefin Sans";
-    font-size: 0.75em;
-    border: 1px solid black;
-    padding: 2%;
-}
-
-label {
-    padding: 0 0 10%;
-}
-
-.full-width {
-    padding: 0 0 10%;
-}
-
-#sign-up-form label {
-    display: flex;
-    align-items: center;
-}
-
-#sign-up-form label input {
-    margin-right: 12px;
-    width: 25px;
-    margin-bottom: 0px;
-}*/
-
-/* 3rd party code via: https: //codepen.io/rstrahl/pen/rxmjgL form specific formatting */
+/* 3rd party code via: https: //codepen.io/rstrahl/pen/rxmjgL form-specific formatting */
 .form-group {
     display: flex;
     flex-direction: row;
@@ -221,7 +192,6 @@ label {
     margin-top: 5%;
 }
 
-/* white boxes */
 .form-group .input-control {
     flex: 1 1 auto;
     display: block;
@@ -250,20 +220,23 @@ button:active {
     border: 2px solid #602f27;
 }
 
+/* end of 3rd party code */
+
+
 /* map */
 #map-div {
-    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
 .map {
-    border: 2px solid #fff8de;
     width: 100%;
     height: 252px;
+    border: 2px solid #fff8de;
 }
 
+/* footer */
 footer {
     width: 100%;
     background-color: #fff8de;
@@ -286,425 +259,186 @@ footer ul {
 
 /* media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
-
     header {
-        width: 100%;
-        height: 12%;
-        background-color: #fff8de;
-        flex-direction: row;
-        align-items: flex-end;
+        padding: 6% 0 2% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
-        padding: 5% 2% 2% 5%;
-        border-bottom: 3px solid #f19356;
     }
 
     #logo {
-        color: #602f27;
-        font-size: 2rem;
-        text-align: left;
-        padding-bottom: 0;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    nav>ul {
-        font-size: 100%;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: 20px;
+        padding-bottom: 3%;
     }
 
     #hero-image {
         margin-top: 12%;
+        padding: 0;
     }
 
     #hero-image-text {
-        background-color: rgba(0, 0, 0, 0.2);
-        font-size: 125%;
-        position: absolute;
-        top: 11%;
-        right: 8%;
-        width: 40%;
-        text-align: right;
-        padding: 5px 10px 5px 2px;
-        letter-spacing: 0.5px;
-        color: #f19356;
-    }
-
-    #video-container {
-        margin-top: 5%;
+        font-size: 130%;
+        top: 13%;
     }
 
     #organist-video {
-        width: 100%;
-        height: 300px;
-    }
-
-    fieldset {
-        border: none;
-        margin: 0 10% 0;
-    }
-
-    fieldset:last-of-type {
-        border: none;
-        margin: 5% 10%;
-    }
-
-    #sign-up-form label.full-width input {
-        width: 70%;
-        margin-left: 25%;
-    }
-
-    #sign-up-form label[for="message"] {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        padding-bottom: 3%;
-    }
-
-    textarea {
-        margin: 0 0 2%;
-        width: 100%;
-        min-height: 2em;
-        font-family: "Josefin Sans";
-        font-size: 0.75em;
-        border: 1px solid black;
-        padding: 2%;
+        width: 518px;
+        height: 252px;
     }
 
     .map {
-        border: 2px solid #fff8de;
-        width: 100%;
-        height: 518px;
+        width: 518px;
+        height: 252px;
     }
 
-    footer {
-        width: 100%;
-        background-color: #fff8de;
-        font-size: 150%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
+    .form-group label {
+        flex: none;
+        display: block;
+        width: 20%;
+        font-size: 1em;
+        margin-top: 4%;
+        margin-left: 5%;
     }
 
-    footer ul {
-        font-size: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .copyright {
-        font-size: 40%;
-        padding-top: 10px;
-        text-align: center;
-    }
-}
-
-/* media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-
-    body {
-        font-size: 1.25rem;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    h4 {
-        font-size: 21px;
-    }
-
-    header {
-        width: 100%;
-        height: 12%;
-        background-color: #fff8de;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
-        padding: 5% 2% 0 5%;
-        margin: 0;
-        border-bottom: 3px solid #f19356;
-    }
-
-    ul {
-        font-size: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    #logo {
-        color: #602f27;
-        font-size: 2rem;
-        text-align: left;
-        padding-bottom: 0;
-    }
-
-    #hero-image {
-        margin-top: 8%;
-    }
-
-    #hero-image-text {
-        background-color: rgba(0, 0, 0, 0.2);
-        font-size: 150%;
-        position: absolute;
-        top: 17%;
-        right: 8%;
-        width: 40%;
-        text-align: right;
-        padding: 5px 10px 5px 2px;
-        letter-spacing: 0.5px;
-        color: #f19356;
-    }
-
-    #organist-video {
-        height: 500px;
-    }
-
-    /* 3rd party gallery code adjustment */
-    .column {
-        flex: 30%;
-        max-width: 30%;
-        padding: 0 4px;
-    }
-
-    /* end */
-
-    #form {
-        margin-top: 0px;
-    }
-
-    #sign-up-form {
-        width: 100%;
-        margin-top: 2%;
-        ;
-    }
-
-    .full-width {
-        padding: 0 0 5%;
-    }
-
-    #sign-up-form label.full-width input {
-        width: 60%;
-        margin-left: 8%;
-        font-size: .9rem;
-        padding: 1%;
+    .form-group .input-control {
+        margin: 3% 15% 2% 0;
     }
 
     button[type="submit"] {
-        margin-left: 33%;
+        margin: 2% auto 0;
     }
 
-    fieldset {
-        margin: 0 10% 5% 20%;
+    /* media query: tablets and larger (768px and up) */
+    @media screen and (min-width: 768px) {
+        header {
+            padding-top: 4%;
+            padding-bottom: 1%;
+        }
+
+        ul {
+            font-size: 100%;
+            gap: 20px;
+        }
+
+        #logo {
+            font-size: 2rem;
+            padding-bottom: 4%;
+        }
+
+        #hero-image-text {
+            font-size: 130%;
+            top: 10%;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 21px;
+        }
+
+        p {
+            font-size: 110%;
+        }
+
+        #hero-image-text {
+            font-size: 130%;
+            top: 20%;
+            right: 8%;
+            padding-right: 3%;
+        }
+
+        #organist-video {
+            width: 680px;
+            height: 500px;
+        }
+
+        .map {
+            width: 680px;
+            height: 500px;
+        }
+
+        .form-group label {
+            width: 15%;
+            font-size: 1em;
+            margin-top: 4%;
+            margin-left: 5%;
+        }
+
+        .form-group .input-control {
+            margin: 3% 22% 2% 0;
+            min-height: 2.25rem;
+        }
+
+        button[type="submit"] {
+            margin: 2% auto 0;
+            min-width: 120px;
+            min-height: 2.25rem;
+            font-size: 1rem;
+            padding-top: 6px;
+        }
+
+        .copyright {
+            font-size: 45%;
+        }
     }
 
-    fieldset:last-of-type {
-        margin: 0 10% 0 20%;
-    }
+    /* media query: laptops and desktops (992px and up) */
+    @media screen and (min-width: 992px) {
+        header {
+            flex-direction: row;
+            align-items: flex-end;
+            padding: 4% 4% 1% 4%;
+        }
 
+        #logo {
+            font-size: 2.75rem;
+            padding-bottom: 10%;
+            padding-top: 5%;
+        }
 
-    textarea,
-    input {
-        margin-left: 0%;
-        width: 85%;
-        min-height: 2em;
-        font-size: 0.9rem;
-        padding: 1%;
-    }
+        ul {
+            font-size: 130%;
+            gap: 15px;
+            padding-bottom: 4%;
+        }
 
+        h2 {
+            font-size: 28px;
+        }
 
+        h4 {
+            font-size: 23px;
+        }
 
-    .copyright {
-        font-size: 50%;
-        padding-top: 12%;
-        text-align: center;
-    }
-}
+        p {
+            font-size: 120%;
+        }
 
-/* media query: laptops and desktops (992px and up) */
-@media screen and (min-width: 992px) {
-    header {
-        width: 100%;
-        background-color: #fff8de;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
-        padding: 4% 2% 0 4%;
-        border-bottom: 3px solid #f19356;
-    }
+        #organist-video {
+            width: 890px;
+            height: 590px;
+        }
 
-    #logo {
-        color: #602f27;
-        font-size: 2rem;
-        text-align: left;
-        padding-bottom: 0;
-    }
+        .map {
+            width: 890px;
+            height: 590px;
+        }
 
-    #hero-image {
-        margin-top: 8%;
-    }
+        .form-group .input-control {
+            min-height: 2.75rem;
+        }
 
-    #hero-image-text {
-        background-color: rgba(0, 0, 0, 0.2);
-        font-size: 180%;
-        position: absolute;
-        top: 17%;
-        right: 8%;
-        width: 50%;
-        text-align: right;
-        padding: 5px 15px 0 2px;
-        letter-spacing: 0.5px;
-        color: #f19356;
-    }
+        button[type="submit"] {
+            min-width: 130px;
+            min-height: 2.75rem;
+            font-size: 1.25rem;
 
-    #organist-video {
-        width: 100%;
-        height: 500px;
-    }
+        }
 
-    button[type="submit"] {
-        margin-left: 35%;
-    }
-
-    footer ul {
-        font-size: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-}
-
-/* media query: larger width (1350px and up) */
-@media screen and (min-width: 1350px) {
-    header {
-        width: 100%;
-        height: 12%;
-        background-color: #fff8de;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
-        padding: 4% 2% 0 4%;
-        border-bottom: 3px solid #f19356;
-    }
-
-    #logo {
-        color: #602f27;
-        font-size: 2rem;
-        text-align: left;
-        padding-bottom: 0;
-    }
-
-    #hero-image {
-        margin-top: 6%;
-    }
-
-    #hero-image-text {
-        background-color: rgba(0, 0, 0, 0.2);
-        font-size: 180%;
-        position: absolute;
-        top: 17%;
-        right: 8%;
-        width: 47%;
-        text-align: right;
-        padding: 5px 15px 0 2px;
-        letter-spacing: 0.5px;
-        color: #f19356;
-    }
-
-    #organist-video {
-        width: 100%;
-        height: 650px;
-    }
-
-
-    button[type="submit"] {
-        margin-left: 37%;
-    }
-
-    footer ul {
-        font-size: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-}
-
-/* media query: largest width (1920px) */
-@media screen and (width: 1920px) {
-    body {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    h4 {
-        font-size: 28px;
-    }
-
-    header {
-        width: 100%;
-        height: 12%;
-        background-color: #fff8de;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
-        padding: 4% 2% 2% 4%;
-        border-bottom: 3px solid #f19356;
-    }
-
-    #logo {
-        color: #602f27;
-        font-size: 2.5rem;
-        text-align: left;
-        padding-bottom: 0;
-    }
-
-    #hero-image {
-        margin-top: 6%;
-    }
-
-    #hero-image-text {
-        background-color: rgba(0, 0, 0, 0.2);
-        font-size: 180%;
-        position: absolute;
-        top: 17%;
-        right: 8%;
-        width: 45%;
-        text-align: right;
-        padding: 5px 20px 0 2px;
-        letter-spacing: 0.5px;
-        color: #f19356;
-    }
-
-    #organist-video {
-        width: 100%;
-        height: 700px;
-    }
-
-
-    button[type="submit"] {
-        margin-left: 39%;
-    }
-
-    footer ul {
-        font-size: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+        .copyright {
+            font-size: 50%;
+        }
     }
 }

@@ -38,6 +38,10 @@ ul {
     gap: 10px;
 }
 
+.anchor-class {
+    margin-top: 0;
+}
+
 li {
     list-style-type: none;
 }
@@ -151,32 +155,30 @@ div.heading-layout i {
     border: 2px solid black;
 }
 
+/*  code from 3rd party via: https: //www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
 
-.landscape {
+.column {
+    flex: 100%;
     max-width: 100%;
+    padding: 0 4px;
 }
 
-.portrait {
-    max-width: 60%;
-}
-
-/* form */
-#sign-up-form {
+.column img {
+    margin-top: 8px;
+    vertical-align: bottom;
     width: 100%;
 }
 
-fieldset {
-    border: none;
-    margin-top: 10%;
-}
+/* end of 3rd party code */
 
-fieldset:last-of-type {
-    border: none;
-    margin-bottom: 10%;
-}
-
-input,
-textarea {
+/* form */
+/*#form {
+input {
     margin: 0 0 5%;
     width: 100%;
     min-height: 2em;
@@ -194,54 +196,52 @@ label {
     padding: 0 0 10%;
 }
 
-#sign-up-form label.full-width input {
-    width: 100%;
-    max-width: 75%;
-    margin-left: auto;
-}
-
 #sign-up-form label {
     display: flex;
     align-items: center;
-}
-
-#sign-up-form label[for="message"] {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding-bottom: 3%;
-}
-
-#sign-up-form label:last-child {
-    padding: 0;
 }
 
 #sign-up-form label input {
     margin-right: 12px;
     width: 25px;
     margin-bottom: 0px;
+}*/
+
+/* 3rd party code via: https: //codepen.io/rstrahl/pen/rxmjgL form specific formatting */
+.form-group {
+    display: flex;
+    flex-direction: row;
 }
 
-select {
-    margin: 10px 0 0;
-    width: 100%;
-    min-height: 2em;
-    background-color: white;
-    font-size: 16px;
+.form-group label {
+    flex: none;
+    display: block;
+    width: 30%;
+    font-size: 1em;
+    margin-top: 5%;
+}
+
+/* white boxes */
+.form-group .input-control {
+    flex: 1 1 auto;
+    display: block;
+    margin: 3% 8px 10px 0;
+    min-height: 1.5rem;
+    padding: 4px;
+    font-family: 'Josefin Sans';
 }
 
 button[type="submit"] {
-    display: block;
+    padding: 5px 15px;
     margin: auto;
-    font-family: 'Josefin Sans';
-    font-size: 1rem;
-    color: #602f27;
-    background-color: #fff8de;
-    padding-top: 2px;
-    border: 2px solid #f19356;
     min-width: 100px;
     min-height: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-size: .75rem;
+    color: #602f27;
+    background-color: #fff8de;
+    padding-top: 5px;
+    border: 2px solid #f19356;
 }
 
 button:active {
@@ -470,6 +470,15 @@ footer ul {
         height: 500px;
     }
 
+    /* 3rd party gallery code adjustment */
+    .column {
+        flex: 30%;
+        max-width: 30%;
+        padding: 0 4px;
+    }
+
+    /* end */
+
     #form {
         margin-top: 0px;
     }
@@ -635,16 +644,16 @@ footer ul {
 /* media query: largest width (1920px) */
 @media screen and (width: 1920px) {
     body {
-            font-size: 1.5rem;
-        }
-    
-        h2 {
-            font-size: 30px;
-        }
-    
-        h4 {
-            font-size: 28px;
-        }
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
 
     header {
         width: 100%;

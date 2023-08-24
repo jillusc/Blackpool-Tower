@@ -491,9 +491,9 @@ footer ul {
         padding: 1%;
     }
 
-        button[type="submit"] {
-            margin-left: 33%;
-        }
+    button[type="submit"] {
+        margin-left: 33%;
+    }
 
     fieldset {
         margin: 0 10% 5% 20%;
@@ -563,9 +563,9 @@ footer ul {
         height: 500px;
     }
 
-                button[type="submit"] {
-                    margin-left: 35%;
-                }
+    button[type="submit"] {
+        margin-left: 35%;
+    }
 
     footer ul {
         font-size: 100%;
@@ -576,7 +576,7 @@ footer ul {
     }
 }
 
-/* media query: largest (1350px and up) */
+/* media query: larger width (1350px and up) */
 @media screen and (min-width: 1350px) {
     header {
         width: 100%;
@@ -619,9 +619,78 @@ footer ul {
     }
 
 
-                        button[type="submit"] {
-                            margin-left: 37%;
-                        }
+    button[type="submit"] {
+        margin-left: 37%;
+    }
+
+    footer ul {
+        font-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* media query: largest width (1920px) */
+@media screen and (width: 1920px) {
+    body {
+            font-size: 1.5rem;
+        }
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        h4 {
+            font-size: 28px;
+        }
+
+    header {
+        width: 100%;
+        height: 12%;
+        background-color: #fff8de;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 4% 2% 2% 4%;
+        border-bottom: 3px solid #f19356;
+    }
+
+    #logo {
+        color: #602f27;
+        font-size: 2.5rem;
+        text-align: left;
+        padding-bottom: 0;
+    }
+
+    #hero-image {
+        margin-top: 6%;
+    }
+
+    #hero-image-text {
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 180%;
+        position: absolute;
+        top: 17%;
+        right: 8%;
+        width: 45%;
+        text-align: right;
+        padding: 5px 20px 0 2px;
+        letter-spacing: 0.5px;
+        color: #f19356;
+    }
+
+    #organist-video {
+        width: 100%;
+        height: 700px;
+    }
+
+
+    button[type="submit"] {
+        margin-left: 39%;
+    }
+
     footer ul {
         font-size: 100%;
         display: flex;

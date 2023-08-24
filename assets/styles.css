@@ -8,7 +8,6 @@
 }
 
 body {
-    /*  min-height: 100vh; */
     background-color: #e7d0b9;
     font-family: "Josefin Sans", sans-serif;
     color: #602f27;
@@ -17,7 +16,7 @@ body {
 
 header {
     width: 100%;
-    padding: 10% 0 2% 0;
+    padding: 10% 0 4% 0;
     background-color: #fff8de;
     position: fixed;
     z-index: 99;
@@ -47,11 +46,6 @@ hr {
     border-top: 1px solid #602f27;
 }
 
-/* for anchors to leave top space */
-.anchor-link {
-    margin-top: 200px;
-}
-
 /* links */
 a {
     text-decoration: none;
@@ -60,10 +54,6 @@ a {
 
 a:focus {
     color: #9ba5b1;
-}
-
-.active {
-    text-decoration: underline;
 }
 
 /* text */
@@ -142,7 +132,7 @@ div.heading-layout i {
     background-color: rgba(0, 0, 0, 0.2);
     font-size: 110%;
     position: absolute;
-    top: 15%;
+    top: 10%;
     right: 5%;
     width: 40%;
     text-align: right;
@@ -523,7 +513,7 @@ footer ul {
         flex-direction: row;
         align-items: baseline;
         justify-content: space-between;
-        padding: 4% 2% 1% 4%;
+        padding: 4% 2% 0 4%;
         border-bottom: 3px solid #f19356;
     }
 
@@ -574,7 +564,7 @@ footer ul {
         flex-direction: row;
         align-items: baseline;
         justify-content: space-between;
-        padding: 4% 2% 1% 4%;
+        padding: 4% 2% 0 4%;
         border-bottom: 3px solid #f19356;
     }
 
@@ -614,3 +604,4 @@ footer ul {
         align-items: center;
         gap: 20px;
     }
+}

@@ -354,6 +354,17 @@ footer ul {
             height: 500px;
         }
 
+        .row {
+            justify-content: center;
+
+        }
+
+        .column {
+            flex: 30%;
+            max-width: 30%;
+            padding: 0 4px;
+        }
+
         .map {
             width: 680px;
             height: 500px;
@@ -434,7 +445,6 @@ footer ul {
             min-width: 130px;
             min-height: 2.75rem;
             font-size: 1.25rem;
-
         }
 
         .copyright {

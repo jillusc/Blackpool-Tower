@@ -1,22 +1,10 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Blackpool Tower
 
-Welcome,
+This website informs visitors about The Blackpool Tower, a famous landmark in a popular seaside town in northern England.
+After an introductory text, it has facts pertaining to the history of the tower and its present day status, including a summary of the activities and events offered for tourists.
+Users can watch a video of one of the tower's special features (the ballroom), see photos of the tower, view a map of the location and use a form to sign up for a newsletter.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **July 26th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
+The website can be viewed here [The Blackpool Tower](https://jillusc.github.io/Blackpool-Tower/index.html)
 
 To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 

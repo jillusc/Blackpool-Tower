@@ -42,6 +42,7 @@ Page Sections
 * using Lighthouse, the page's accessibility scored highly in the green zone
 <img width="1073" alt="lighthouse ratings" src="https://github.com/jillusc/Blackpool-Tower/assets/139234433/487b9e4c-c122-454f-8555-40459e26e3b6">
 * the site html and css were validated using W3C online tools
+<img width="1266" alt="css validated" src="https://github.com/jillusc/Blackpool-Tower/assets/139234433/85a38c27-811a-4d63-916b-4276066ca8c7">
 
 ## Known Bugs
 * the anchor links in the navigation menu jump to a point that is lower than what would be desirable: fixes that were attempted did not solve the problem
@@ -62,15 +63,12 @@ The site uses two instances of third party code, used as templates that were edi
 
 Photographic credits:
 The images used in the site were found on free images websites as detailed below:
-https://www.rawpixel.com/search/blackpool%20tower?page=1&sort=curated&topic_group=_topics    - (no name attributed)
-https://pixabay.com/photos/blackpool-tower-england-7119769/    - leemurry01
-https://unsplash.com/photos/XGlZj6AGBlg    - JonnyGios
-https://unsplash.com/photos/JENweyUB1Ds    - Mark McNeill
-https://cdn.blackpoolgrand.co.uk/app/uploads/2015/11/P1020466.jpg    - (no name attributed)
+* https://www.rawpixel.com/search/blackpool%20tower?page=1&sort=curated&topic_group=_topics    - (no name attributed)
+* https://pixabay.com/photos/blackpool-tower-england-7119769/    - leemurry01
+* https://unsplash.com/photos/XGlZj6AGBlg    - JonnyGios
+* https://unsplash.com/photos/JENweyUB1Ds    - Mark McNeill
+* https://cdn.blackpoolgrand.co.uk/app/uploads/2015/11/P1020466.jpg    - (no name attributed)
 They were converted to .webp files using the online tool Convertio.
 
 ## Acknowledgements
 Thanks to my mentor Rahul Lakhanpal for his feedback
-
-
-

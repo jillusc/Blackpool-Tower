@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@300;400;700&display=swap");
+
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7d0b9;
+    font-family: "Josefin Sans", sans-serif;
+    color: #602f27;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    height: 13%;
+    padding: 12% 0 6% 0;
+    background-color: #fff8de;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid #f19356;
+}
+
+section {
+    padding: 0 5% 5% 5%;
+}
+
+ul {
+    font-size: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.anchor-class {
+    margin-top: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    border-top: 1px solid #602f27;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    color: #9ba5b1;
+}
+
+/* text */
+#logo {
+    color: #602f27;
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 17px;
+    padding-bottom: 2%;
+}
+
+p {
+    line-height: 150%;
+    padding-bottom: 2%;
+}
+
+.font-weight-100 {
+    font-weight: 100;
+    font-size: .9rem;
+    line-height: 95% !important;
+    margin-top: 4px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.hidden-heading {
+    display: none;
+}
+
+
+/* layout classes */
+.orangey-bg {
+    background-color: #f1935644;
+    border-top: 2px solid #fff8de;
+    border-bottom: 2px solid #fff8de;
+}
+
+.orangey-bg:last-of-type {
+    background-color: #f1935644;
+    border-bottom: 3px solid #f19356;
+}
+
+.heading-layout {
+    display: flex;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+div.heading-layout i {
+    margin-right: 5px;
+}
+
+
+/* media items */
+#hero-image {
+    margin-top: 27%;
+    padding: 0;
+    height: 540px;
+    width: 100%;
+    position: relative;
+    background: url("images/free-wide.webp") no-repeat center center/cover;
+    background-position: 30% 100%;
+    border-bottom: 2px solid #602f27;
+}
+
+#hero-image-text {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 110%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 40%;
+    text-align: right;
+    padding: 5px;
+    letter-spacing: 0.5px;
+    color: #f19356;
+}
+
+#video-container {
+    margin-top: 8%;
+    width: 100%;
+}
+
+#organist-video {
+    width: 100%;
+    border: 2px solid black;
+}
+
+/* gallery */
+/*  code from 3rd party via: https: //www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: bottom;
+    width: 100%;
+}
+/* end of 3rd party code */
+
+/* 3rd party code via: https: //codepen.io/rstrahl/pen/rxmjgL form-specific formatting */
+.form-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group label {
+    flex: none;
+    display: block;
+    width: 30%;
+    font-size: 1em;
+    margin-top: 5%;
+}
+
+.form-group .input-control {
+    flex: 1 1 auto;
+    display: block;
+    margin: 3% 8px 10px 0;
+    min-height: 1.5rem;
+    padding: 4px;
+    font-family: 'Josefin Sans';
+}
+
+button[type="submit"] {
+    padding: 5px 15px;
+    margin: auto;
+    min-width: 100px;
+    min-height: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-size: .75rem;
+    color: #602f27;
+    background-color: #fff8de;
+    padding-top: 5px;
+    border: 2px solid #f19356;
+}
+
+button:active {
+    color: #602f27;
+    background-color: #f19356;
+    border: 2px solid #602f27;
+}
+/* end of 3rd party code */
+
+
+/* map */
+#map-div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.map {
+    width: 100%;
+    height: 252px;
+    border: 2px solid #fff8de;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #fff8de;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer ul {
+    padding-bottom: 15px;
+}
+
+.copyright {
+    font-size: 40%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    header {
+        padding: 6% 0 2% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        padding-bottom: 3%;
+    }
+
+    #hero-image {
+        margin-top: 12%;
+        padding: 0;
+    }
+
+    #hero-image-text {
+        font-size: 130%;
+        top: 13%;
+    }
+
+    #organist-video {
+        width: 518px;
+        height: 252px;
+    }
+
+    .map {
+        width: 518px;
+        height: 252px;
+    }
+
+    .form-group label {
+        flex: none;
+        display: block;
+        width: 20%;
+        font-size: 1em;
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+
+    .form-group .input-control {
+        margin: 3% 15% 2% 0;
+    }
+
+    button[type="submit"] {
+        margin: 2% auto 0;
+    }
+
+    /* media query: tablets and larger (768px and up) */
+    @media screen and (min-width: 768px) {
+        header {
+            padding-top: 4%;
+            padding-bottom: 1%;
+        }
+
+        ul {
+            font-size: 100%;
+            gap: 20px;
+        }
+
+        #logo {
+            font-size: 2rem;
+            padding-bottom: 4%;
+        }
+
+        #hero-image-text {
+            font-size: 130%;
+            top: 10%;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 21px;
+        }
+
+        p {
+            font-size: 110%;
+        }
+
+        #hero-image-text {
+            font-size: 130%;
+            top: 20%;
+            right: 8%;
+            padding-right: 3%;
+        }
+
+        #organist-video {
+            width: 680px;
+            height: 500px;
+        }
+
+        .map {
+            width: 680px;
+            height: 500px;
+        }
+
+        .form-group label {
+            width: 15%;
+            font-size: 1em;
+            margin-top: 4%;
+            margin-left: 5%;
+        }
+
+        .form-group .input-control {
+            margin: 3% 22% 2% 0;
+            min-height: 2.25rem;
+        }
+
+        button[type="submit"] {
+            margin: 2% auto 0;
+            min-width: 120px;
+            min-height: 2.25rem;
+            font-size: 1rem;
+            padding-top: 6px;
+        }
+
+        .copyright {
+            font-size: 45%;
+        }
+    }
+
+    /* media query: laptops and desktops (992px and up) */
+    @media screen and (min-width: 992px) {
+        header {
+            flex-direction: row;
+            align-items: flex-end;
+            padding: 4% 4% 1% 4%;
+        }
+
+        #logo {
+            font-size: 2.75rem;
+            padding-bottom: 10%;
+            padding-top: 5%;
+        }
+
+        ul {
+            font-size: 130%;
+            gap: 15px;
+            padding-bottom: 4%;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h4 {
+            font-size: 23px;
+        }
+
+        p {
+            font-size: 120%;
+        }
+
+        #organist-video {
+            width: 890px;
+            height: 590px;
+        }
+
+        .map {
+            width: 890px;
+            height: 590px;
+        }
+
+        .form-group .input-control {
+            min-height: 2.75rem;
+        }
+
+        button[type="submit"] {
+            min-width: 130px;
+            min-height: 2.75rem;
+            font-size: 1.25rem;
+
+        }
+        .copyright {
+            font-size: 50%;
+        }
+    }
+}
+}

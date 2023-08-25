@@ -11,11 +11,11 @@ The website can be viewed here [The Blackpool Tower](https://jillusc.github.io/B
 ## Features
 Style
 * the colour scheme employs colours taken from the hero image and represent the sun and sand in keeping with the theme of the seaside. The font colour is not a harsh black, but a dark brown which was taken from the metal structure of the tower itself
-* the font has soft, rounded shapes with angular elements which reflect both the fun nature of the attraction and its location, as well as the elegance of the 129-year-old tower
+* the font is imported to the html from Google Fonts and is called Josefin Sans: it has soft, rounded shapes with angular elements which reflect both the fun nature of the attraction and its location, as well as the elegance of the 129-year-old tower
 * in the hero image, the tower is positioned in the central area of the viewport for all devices, giving users a clear, direct association with the subject of the site; the overlaying text stands out and this section looks neat at 280px, 576px, 768px and 992px widths
-* the sections have alternating background colours and small icons to further highlight the start of new sections
+* the sections have alternating background colours and small icons from Font Awesome to further highlight the start of new sections
 * for consistency, the header and footer share the same style
-* a favicon was created in Photoshop: it echoes the shape of the tower
+* the favicon was created using Photoshop: it echoes the shape of the tower
 
 Navigation
 * the menu features a house symbol for the home (top of page) link instead of the word 'Home' so that it's easier for users to differentiate it from the main content of the text sections (Past and Present); and because there is just the one page
@@ -55,19 +55,22 @@ The site is deployed to Github by the following process:
 * click Save
 
 ## Credits
-Code credits
+Code credits:
 The site uses two instances of third party code, used as templates that were edited accordingly and to suit:
 * for assistance with the gallery layout: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
 * for a simpler form layout: https://codepen.io/rstrahl/pen/rxmjgL
 
-Photographic credits
+Photographic credits:
 The images used in the site were found on free images websites as detailed below:
-https://www.rawpixel.com/search/blackpool%20tower?page=1&sort=curated&topic_group=_topics    - (no name given)
+https://www.rawpixel.com/search/blackpool%20tower?page=1&sort=curated&topic_group=_topics    - (no name attributed)
 https://pixabay.com/photos/blackpool-tower-england-7119769/    - leemurry01
 https://unsplash.com/photos/XGlZj6AGBlg    - JonnyGios
 https://unsplash.com/photos/JENweyUB1Ds    - Mark McNeill
+https://cdn.blackpoolgrand.co.uk/app/uploads/2015/11/P1020466.jpg    - (no name attributed)
+They were converted to .webp files using the online tool Convertio.
 
-
+## Acknowledgements
+Thanks to my mentor Rahul Lakhanpal for his feedback
 
 
 

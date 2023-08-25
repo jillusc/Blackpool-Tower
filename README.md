@@ -41,7 +41,7 @@ Page Sections
 * full testing was not completed: it has been viewed and inspected using Chrome and functions well at the media queries' screen specifications
 * using Lighthouse, the page's accessibility scored highly in the green zone
 <img width="1073" alt="lighthouse ratings" src="https://github.com/jillusc/Blackpool-Tower/assets/139234433/487b9e4c-c122-454f-8555-40459e26e3b6">
-* the site html and css were validated using W3C online tools
+* the site html and css passed validated tests using W3C online tools
 <img width="1266" alt="css validated" src="https://github.com/jillusc/Blackpool-Tower/assets/139234433/85a38c27-811a-4d63-916b-4276066ca8c7">
 
 ## Known Bugs
@@ -54,6 +54,7 @@ The site is deployed to Github by the following process:
 * select Pages in the pane on the left
 * source is set to 'Deploy from a branch' and the main branch is selected with the folder set to / (root)
 * click Save
+The website can be viewed here [The Blackpool Tower](https://jillusc.github.io/Blackpool-Tower/index.html)
 
 ## Credits
 Code credits:

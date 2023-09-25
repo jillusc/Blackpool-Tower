@@ -4,7 +4,7 @@ This website informs visitors about The Blackpool Tower, a famous landmark in a 
 After an introductory text, it has facts pertaining to the history of the tower and its present day status, including a summary of the activities and events offered for tourists.
 Users can watch a video of one of the tower's special features (the ballroom), see photos of the tower, view a map of the location and use a form to sign up for a newsletter.
 
-The website can be viewed here [The Blackpool Tower](https://jillusc.github.io/Blackpool-Tower/index.html)
+The website can be viewed here: [The Blackpool Tower](https://jillusc.github.io/Blackpool-Tower/index.html)
 
 <img width="577" alt="main home page screenshot" src="https://github.com/jillusc/Blackpool-Tower/assets/139234433/e9b8676b-04bd-4dc6-a2de-2ee056976430">
 
@@ -46,7 +46,6 @@ Page Sections
 
 ## Known Bugs
 * the anchor links in the navigation menu jump to a point that is lower than what would be desirable: fixes that were attempted did not solve the problem
-* the responsiveness is not smooth and needs improvement
 
 ## Deployment
 The site is deployed to Github by the following process:
@@ -54,15 +53,15 @@ The site is deployed to Github by the following process:
 * select Pages in the pane on the left
 * source is set to 'Deploy from a branch' and the main branch is selected with the folder set to / (root)
 * click Save
-The website can be viewed here [The Blackpool Tower](https://jillusc.github.io/Blackpool-Tower/index.html)
+The website can be viewed here: [The Blackpool Tower](https://jillusc.github.io/Blackpool-Tower/index.html)
 
 ## Credits
-Code credits:
+Content:
 The site uses two instances of third party code, used as templates that were edited accordingly and to suit:
 * for assistance with the gallery layout: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
 * for a simpler form layout: https://codepen.io/rstrahl/pen/rxmjgL
 
-Photographic credits:
+Media:
 The images used in the site were found on free images websites as detailed below:
 * https://www.rawpixel.com/search/blackpool%20tower?page=1&sort=curated&topic_group=_topics    - (no name attributed)
 * https://pixabay.com/photos/blackpool-tower-england-7119769/    - leemurry01

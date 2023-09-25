@@ -76,19 +76,24 @@ The final section is where users can submit their information to receive further
 
 ## Features to implement
 
-* a burger menu would be neater and expected by users of mobile phones
-* a message to confirm form submission is preferable so that users don't question whether inputting their information has been successful
+* a burger menu would be nice and possibly expected by users of mobile phones
+* a message to confirm form submission would be helpful for the user so that there is no question of whether inputing their information has been successful
 
 ## Testing
 
-The page was inspected using Chrome's devtools and viewed in Chrome, Firefox, Edge, Safari and Samsung Internet browsers on an Apple and an Android mobile, on a tablet, a MacBook Air and a laptop. The anchor links, video playback, map link, form input and social media links all functioned successfully in every case.
+The page was inspected using Chrome's devtools and viewed in Chrome, Firefox, Edge, Safari and Samsung Internet browsers on an Apple and an Android mobile, on a tablet and a laptop. The anchor links, video playback, map link, form input and social media links all functioned successfully in every case.
 
-<img src="assets/images/README images/video edge.png">
-<img src="assets/images/README images/map samsung.jpg">
-<img src="assets/images/README images/6 section.png">
-<img src="assets/images/README images/6 section.png">
-<img src="assets/images/README images/6 section.png">
-<img src="assets/images/README images/6 section.png">
+<img src="assets/images/README images/video edge.png"><BR>
+Playing the video in Edge on laptop<BR><BR>
+
+<img src="assets/images/README images/map samsung.jpg"><BR>
+Opening the map in Samsung Internet on mobile<BR><BR>
+
+<img src="assets/images/README images/map in safari on iphone.jpeg" width="30%"><BR>
+Opening the map in Safari on iphone<BR><BR>
+
+<img src="assets/images/README images/form in safari on tablet.jpg" width="50%"><BR>
+Testing the form functionality in Safari on tablet<BR><BR>
 
 
 The site's html and css passed validation tests using W3C online tools:
@@ -98,11 +103,9 @@ The site's html and css passed validation tests using W3C online tools:
 Using Lighthouse, the page's accessibility scored highly in the green zone:
 <img src="https://github.com/jillusc/Blackpool-Tower/assets/139234433/487b9e4c-c122-454f-8555-40459e26e3b6">
 
-## Known Bugs
+There are no known bugs in existence.<BR>
+A former issue was that in some devices the navigation menu was sitting very close to the bottom of the header, sometimes even outside of it, and this was rectified by removing the {min-height: 20vh;} property from the header.
 
-
-* in some cases, the anchor links in the navigation menu jump to a point that is lower than what would be desirable: fixes that were attempted did not solve the problem. They work correctly in 
-<img src="https://github.com/jillusc/Blackpool-Tower/assets/139234433/487b9e4c-c122-454f-8555-40459e26e3b6">
 
 ## Deployment
 

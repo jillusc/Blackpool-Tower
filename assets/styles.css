@@ -16,7 +16,6 @@ body {
 
 header {
     padding: 50px 0 20px 0;
-    max-height: 20vh;
     display: flex;
     flex-direction: column;
     background-color: #fff8de;

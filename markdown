@@ -61,11 +61,11 @@ Other features include a seasonal Tower Top Garden and Sunset Sessions with cock
 Gallery
 -------
 
-![An image of the tower juxtaposed with a Blackpool donkey](assets/images/blackpool-tower-donkey.jpg) ![Blackpool Tower on a bright and busy day](assets/images/blackpool-tower-people.webp)
+![Looking up at the Blackpool Tower against a dynamic sky](assets/images/blackpool-tower-dynamic.webp) ![Blackpool Tower, the promenade and the sea illuminated at night](assets/images/mark-mc-neill-JENweyUB1Ds-unsplash.webp)
 
-![Blackpool Tower, the promenade and the sea illuminated at night](assets/images/mark-mc-neill-JENweyUB1Ds-unsplash.webp) ![A ground level view of the Blackpool Tower lit up pink against a black sky](assets/images/jonny-gios-XGlZj6AGBlg-unsplash.webp)
+![a shot of Blackpool Tower silhouetted against the setting sun](assets/images/mark-mc-neill-2KdFSNBhcIQ-unsplash.webp) ![A ground level view of the Blackpool Tower lit up pink against a black sky](assets/images/jonny-gios-XGlZj6AGBlg-unsplash.webp)
 
-![Looking up at the Blackpool Tower against a dynamic sky](assets/images/blackpool-tower-dynamic.webp) ![A view of Blackpool Tower and the beach from the sea with a vibrant blue sky](assets/images/blackpool-tower-sea-skyline.webp)
+![a close-up of the top portion of Blackpool Tower with its red ironwork](assets/images/francis-heathcote-cvBSUS4PfTo-unsplash.webp) ![the Blackpool Tower in a postcard-like scene](assets/images/blackpool-4021722_1280.webp) ![a close-up shot of the Blackpool Tower seen from the sky at dusk](assets/images/mark-mc-neill-Ax_paLwzGYs-unsplash.webp)
 
 Visit
 -----
@@ -79,7 +79,7 @@ Sign up
 
 Join the mailing list to receive information about all of the news and exciting events happening at The Blackpool Tower.
 
-Name\* 
+Name 
 
 Email 
 

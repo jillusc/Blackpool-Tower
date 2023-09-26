@@ -81,7 +81,7 @@ The final section is where users can submit their information to receive further
 
 ## Testing
 
-The page was inspected using Chrome's devtools and viewed in Chrome, Firefox, Edge, Safari and Samsung Internet browsers on an Apple and an Android mobile, on a tablet and a laptop. The anchor links, video playback, map link, form input and social media links all functioned successfully in every case.
+The page was inspected using Chrome's devtools and viewed in Chrome, Firefox, Edge, Safari and Samsung Internet browsers on an Apple and an Android mobile, on a tablet, a MacBook Air and a laptop. The anchor links, video playback, map link, form input and social media links all functioned successfully in every case. Some of these are evidenced below:
 
 <img src="assets/images/README images/video edge.png"><BR>
 Playing the video in Edge on laptop<BR><BR>

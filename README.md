@@ -104,7 +104,7 @@ Using Lighthouse, the page's accessibility scored highly in the green zone:
 <img src="https://github.com/jillusc/Blackpool-Tower/assets/139234433/487b9e4c-c122-454f-8555-40459e26e3b6">
 
 There are no known bugs in existence.<BR>
-A former issue was that in some devices the navigation menu was sitting very close to the bottom of the header, sometimes even outside of it, and this was rectified by removing the {min-height: 20vh;} property from the header.
+A former issue was that in some devices the navigation menu was sitting very close to the bottom of the header, sometimes even outside of it, and this was rectified by removing/unspecifying a height property from the header; Flexbox was also simplified in the header element.
 
 
 ## Deployment
@@ -131,9 +131,14 @@ The images used in the site were found on free images websites as detailed below
 
 * <https://www.rawpixel.com/search/blackpool%20tower?page=1&sort=curated&topic_group=_topics>    - (no name attributed)
 * <https://pixabay.com/photos/blackpool-tower-england-7119769/>    - leemurry01
+* <https://unsplash.com/photos/JENweyUB1Ds>    - Mark mc neill
+* <https://unsplash.com/photos/2KdFSNBhcIQ>    - Mark mc neill
 * <https://unsplash.com/photos/XGlZj6AGBlg>    - JonnyGios
-* <https://unsplash.com/photos/JENweyUB1Ds>    - Mark McNeill
-* <https://cdn.blackpoolgrand.co.uk/app/uploads/2015/11/P1020466.jpg>    - (no name attributed)
+* <https://unsplash.com/photos/cvBSUS4PfTo>    - Francis Heathcote
+* <https://pixabay.com/de/photos/blackpool-turm-strand-england-4021722/>    - SnapHappyUK
+* <https://unsplash.com/photos/Ax_paLwzGYs>    - Mark mc neill
+
+
 They were converted to .webp files using the online tool Convertio.
 
 ## Acknowledgements
